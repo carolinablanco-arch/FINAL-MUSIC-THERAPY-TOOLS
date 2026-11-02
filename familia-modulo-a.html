@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Módulo A - Cuestionario para la familia</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lora:wght@500;700&family=Poppins:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: { primary: '#4a5c92', secondary: '#a4b4da', action: '#3b8d77', background: '#f8f9fa' },
+                    fontFamily: { sans: ['Poppins', 'sans-serif'], serif: ['Lora', 'serif'] }
+                }
+            }
+        }
+    </script>
+
+    <link rel="stylesheet" href="/style.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body class="bg-slate-50 min-h-screen font-sans text-slate-800">
+    <main class="min-h-screen px-4 py-8 md:px-8">
+        <div class="max-w-5xl mx-auto" id="family-public-root">
+            <div class="bnpm-shell">
+                <div class="bnpm-header">
+                    <p class="text-sm font-semibold uppercase tracking-[0.22em] text-white/70">BNPM</p>
+                    <h1 class="text-3xl font-serif font-bold mt-2">Módulo A - Cuestionario para la familia</h1>
+                    <p class="text-white/80 mt-2">Cargando formulario...</p>
+                </div>
+                <div class="bnpm-form">
+                    <div class="bnpm-empty">Preparando la experiencia pública.</div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,1172 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Musicoterapia - Plataforma de Evaluación</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2family=Lora:wght@500;700&family=Poppins:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: { primary: '#4a5c92', secondary: '#a4b4da', action: '#3b8d77', background: '#f8f9fa' },
+                    fontFamily: { sans: ['Poppins', 'sans-serif'], serif: ['Lora', 'serif'] }
+                }
+            }
+        }
+    </script>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.28/jspdf.plugin.autotable.min.js"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body class="bg-background text-gray-800 h-screen flex overflow-hidden font-sans">
+
+    <!-- MENÚ LATERAL -->
+    <aside class="w-64 bg-primary text-white flex flex-col shadow-xl z-20 shrink-0">
+        <div class="p-6 text-center border-b border-white/10">
+            <h1 class="font-serif text-2xl font-bold tracking-wide">Music Therapy Tools</h1>
+            <p class="text-xs text-secondary mt-1">Plataforma de herramientas para musicoterapeutas</p>
+        </div>
+        <nav class="flex-1 px-4 py-6 space-y-2">
+            <button onclick="app.cambiarVista('inicio')"
+                class="nav-btn w-full flex items-center gap-3 px-4 py-3 rounded-lg bg-white/20 text-left transition-colors"
+                id="nav-inicio">
+                <i data-lucide="layout-dashboard" class="w-5 h-5"></i> Inicio
+            </button>
+            <button onclick="app.cambiarVista('pacientes')"
+                class="nav-btn w-full flex items-center gap-3 px-4 py-3 rounded-lg hover:bg-white/10 text-left transition-colors"
+                id="nav-pacientes">
+                <i data-lucide="users" class="w-5 h-5"></i> Pacientes
+            </button>
+            <button onclick="app.cambiarVista('evaluaciones')"
+                class="nav-btn w-full flex items-center gap-3 px-4 py-3 rounded-lg hover:bg-white/10 text-left transition-colors"
+                id="nav-evaluaciones">
+                <i data-lucide="activity" class="w-5 h-5"></i> Evaluaciones
+            </button>
+        </nav>
+        <div class="px-4 pb-4">
+            <div class="rounded-2xl border border-white/10 bg-black/10 px-4 py-4">
+                <p class="text-[11px] uppercase tracking-[0.2em] text-white/60 font-semibold">Sesión</p>
+                <p id="auth-user-name" class="mt-2 text-sm font-semibold text-white">Sin sesión</p>
+                <p id="auth-user-email" class="text-xs text-white/70 break-all mt-1"></p>
+                <button id="btn-logout" type="button" onclick="app.cerrarSesion()"
+                    class="mt-4 w-full bg-white/10 hover:bg-white/20 text-white px-4 py-2.5 rounded-lg font-semibold text-sm transition inline-flex items-center justify-center gap-2">
+                    <i data-lucide="log-out" class="w-4 h-4"></i> Cerrar sesión
+                </button>
+            </div>
+        </div>
+        <div class="p-4 border-t border-white/10 text-xs flex items-center justify-center gap-2 bg-black/10">
+            <div id="status-dot" class="w-2.5 h-2.5 rounded-full bg-red-500 animate-pulse"></div>
+            <span id="status-text" class="text-white/80 font-medium">Verificando...</span>
+        </div>
+    </aside>
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <main class="flex-1 relative overflow-y-auto bg-gray-50 p-8 w-full">
+
+        <!-- VISTA: INICIO -->
+        <section id="vista-inicio" class="vista-seccion block max-w-5xl mx-auto animate-fade-in">
+            <header class="mb-10 text-center">
+                <h2 class="text-4xl font-serif font-bold text-primary mb-2">Inicio</h2>
+                <p class="text-gray-500">Gestiona las evaluaciones de tus pacientes.</p>
+            </header>
+            <div id="home-resumen" class="flex flex-wrap justify-center gap-3 mb-8"></div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div onclick="app.cambiarVista('evaluaciones')"
+                    class="bg-white p-8 rounded-2xl cursor-pointer hover:-translate-y-1 hover:shadow-xl transition-all border-l-4 border-action shadow-md flex flex-col items-center text-center">
+                    <div class="bg-action/10 w-16 h-16 rounded-full flex items-center justify-center mb-4"><i
+                            data-lucide="play-circle" class="text-action w-8 h-8"></i></div>
+                    <h3 class="font-bold text-xl mb-2 text-gray-800">Evaluaciones</h3>
+                    <p class="text-sm text-gray-500">Acceder a los tipos de evaluación disponibles y continuar con el protocolo.</p>
+                </div>
+                <div onclick="app.cambiarVista('pacientes')"
+                    class="bg-white p-8 rounded-2xl cursor-pointer hover:-translate-y-1 hover:shadow-xl transition-all border-l-4 border-primary shadow-md flex flex-col items-center text-center">
+                    <div class="bg-primary/10 w-16 h-16 rounded-full flex items-center justify-center mb-4"><i
+                            data-lucide="users" class="text-primary w-8 h-8"></i></div>
+                    <h3 class="font-bold text-xl mb-2 text-gray-800">Pacientes</h3>
+                    <p class="text-sm text-gray-500">Consultar el historial, ver detalles de evaluaciones y exportar
+                        reportes.</p>
+                </div>
+            </div>
+            <section class="mt-10 bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden">
+                <div class="px-6 py-5 border-b bg-slate-50 flex flex-col md:flex-row md:items-center md:justify-between gap-3">
+                    <div>
+                        <h3 class="text-xl font-bold text-primary">Pacientes recientes</h3>
+                        <p class="text-sm text-gray-500 mt-1">Acceso rápido a los últimos pacientes con actividad.</p>
+                    </div>
+                    <button type="button" onclick="app.cambiarVista('pacientes')"
+                        class="bg-white border border-slate-200 text-slate-700 hover:bg-slate-50 px-4 py-2 rounded-lg text-sm font-semibold transition self-start md:self-auto">
+                        Ver todos los pacientes
+                    </button>
+                </div>
+                <div id="home-continuar-trabajo" class="p-6">
+                    <div class="rounded-2xl border border-dashed border-slate-300 bg-slate-50 px-5 py-8 text-center text-sm text-slate-500">
+                        No hay pacientes recientes para mostrar.
+                    </div>
+                </div>
+            </section>
+        </section>
+
+        <!-- VISTA: PACIENTES -->
+        <section id="vista-pacientes" class="vista-seccion hidden max-w-6xl mx-auto animate-fade-in">
+            <div class="flex justify-between items-end mb-8">
+                <div>
+                    <h2 class="text-3xl font-serif font-bold text-primary">Pacientes</h2>
+                    <p class="text-gray-500 mt-2">Listado organizado por tipo de paciente.</p>
+                </div>
+                <div class="flex gap-4">
+                    <div class="relative">
+                        <i data-lucide="search"
+                            class="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400 w-4 h-4"></i>
+                        <input type="text" id="filtro-pacientes" placeholder="Buscar paciente..."
+                            class="pl-10 pr-4 py-2 border rounded-lg focus:ring-2 focus:ring-primary outline-none">
+                    </div>
+                    <button onclick="app.abrirNuevoPacienteDesdeListado()"
+                        class="bg-primary text-white px-5 py-2 rounded-lg shadow hover:bg-primary/90 transition flex items-center gap-2">
+                        <i data-lucide="plus" class="w-4 h-4"></i> Nuevo
+                    </button>
+                </div>
+            </div>
+
+            <div class="flex flex-wrap items-center justify-between gap-4 mb-5">
+                <div class="flex flex-wrap gap-2">
+                    <button id="pacientes-tab-adulto" type="button" onclick="app.cambiarFiltroPacientes('adulto')"
+                        class="px-4 py-2 rounded-full text-sm font-semibold border border-slate-200 bg-white text-slate-700 hover:bg-slate-50 transition">
+                        Adultos
+                    </button>
+                    <button id="pacientes-tab-nino" type="button" onclick="app.cambiarFiltroPacientes('nino')"
+                        class="px-4 py-2 rounded-full text-sm font-semibold border border-slate-200 bg-white text-slate-700 hover:bg-slate-50 transition">
+                        Niños/as
+                    </button>
+                </div>
+                <span id="pacientes-tab-resumen"
+                    class="text-sm text-gray-500 bg-gray-100 px-3 py-1 rounded-full font-medium"></span>
+            </div>
+
+            <div class="bg-white rounded-xl shadow-md overflow-hidden table-container">
+                <table class="interactive-table">
+                    <thead>
+                        <tr>
+                            <th>Nombre y apellido</th>
+                            <th>Tipo de paciente</th>
+                            <th>Diagnóstico</th>
+                            <th>Última evaluación</th>
+                            <th>Cant. evaluaciones</th>
+                            <th class="text-center">Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tabla-pacientes-body"></tbody>
+                </table>
+                <div id="msj-sin-pacientes"
+                    class="p-12 text-center flex flex-col items-center justify-center text-gray-500">
+                    <i data-lucide="folder-open" class="w-12 h-12 mb-3 text-gray-300"></i>
+                    <p class="text-lg">No hay pacientes registrados aún.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="vista-paciente-detalle" class="vista-seccion hidden max-w-6xl mx-auto animate-fade-in">
+            <div class="flex flex-col gap-6">
+                <div class="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-4">
+                    <div>
+                        <button type="button" onclick="app.volverAListadoPacientes()"
+                            class="inline-flex items-center gap-2 text-sm font-semibold text-primary hover:text-primary/80 transition">
+                            <i data-lucide="arrow-left" class="w-4 h-4"></i> Volver a Pacientes
+                        </button>
+                        <h2 id="detalle-paciente-titulo" class="text-3xl font-serif font-bold text-primary mt-3">Paciente</h2>
+                        <p id="detalle-paciente-subtitulo" class="text-gray-500 mt-2">Ficha clínica y evaluaciones asociadas.</p>
+                    </div>
+                    <div id="detalle-paciente-acciones-top" class="flex flex-wrap gap-2"></div>
+                </div>
+
+                <div id="detalle-paciente-alerta" class="hidden rounded-2xl border border-emerald-200 bg-emerald-50 px-4 py-3 text-sm text-emerald-800"></div>
+
+                <div id="detalle-paciente-edicion" class="hidden bg-white rounded-2xl shadow-md border border-slate-200 p-6">
+                    <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-3 mb-5">
+                        <div class="shrink-0">
+                            <h3 class="text-xl font-bold text-primary">Editar paciente</h3>
+                            <p class="text-sm text-gray-500 mt-1">Actualiza la información general y clínica de este paciente.</p>
+                        </div>
+                        <div class="flex gap-2">
+                            <button type="button" onclick="app.cancelarEdicionPaciente()"
+                                class="px-4 py-2 rounded-lg border border-slate-200 text-slate-700 font-semibold hover:bg-slate-50 transition">Cancelar</button>
+                            <button type="button" onclick="app.guardarEdicionPacienteDetalle()"
+                                class="px-4 py-2 rounded-lg bg-primary text-white font-semibold hover:bg-primary/90 transition">Guardar cambios</button>
+                        </div>
+                    </div>
+                    <div id="detalle-paciente-edicion-form"></div>
+                </div>
+
+                <div class="grid grid-cols-1 xl:grid-cols-2 gap-6">
+                    <section class="bg-white rounded-2xl shadow-md border border-slate-200 p-6">
+                        <div class="flex items-center gap-2 mb-4">
+                            <i data-lucide="user-round" class="w-5 h-5 text-primary"></i>
+                            <h3 class="text-xl font-bold text-primary">Información general</h3>
+                        </div>
+                        <div id="detalle-paciente-general" class="grid grid-cols-1 md:grid-cols-2 gap-3"></div>
+                    </section>
+
+                    <section class="bg-white rounded-2xl shadow-md border border-slate-200 p-6">
+                        <div class="flex items-center gap-2 mb-4">
+                            <i data-lucide="stethoscope" class="w-5 h-5 text-primary"></i>
+                            <h3 class="text-xl font-bold text-primary">Información clí­nica</h3>
+                        </div>
+                        <div id="detalle-paciente-clinica" class="grid grid-cols-1 md:grid-cols-2 gap-3"></div>
+                    </section>
+                </div>
+
+                <section class="bg-white rounded-2xl shadow-md border border-slate-200 p-6">
+                    <div class="flex items-center gap-2 mb-4">
+                        <i data-lucide="ruler" class="w-5 h-5 text-primary"></i>
+                        <h3 class="text-xl font-bold text-primary">Mediciones de la mano</h3>
+                    </div>
+                    <div id="detalle-paciente-mediciones" class="grid grid-cols-1 md:grid-cols-2 gap-4"></div>
+                </section>
+
+                <section class="bg-white rounded-2xl shadow-md border border-slate-200 overflow-hidden">
+                    <div class="px-6 py-5 border-b bg-slate-50 flex flex-col md:flex-row md:items-center md:justify-between gap-3">
+                        <div>
+                            <h3 class="text-xl font-bold text-primary">Evaluaciones</h3>
+                            <p class="text-sm text-gray-500 mt-1">Historial de evaluaciones asociadas a este paciente.</p>
+                        </div>
+                        <span id="detalle-paciente-evaluaciones-resumen"
+                            class="text-sm text-gray-500 bg-white px-3 py-1 rounded-full font-medium border border-slate-200"></span>
+                    </div>
+                    <div class="overflow-x-auto">
+                        <table class="interactive-table w-full">
+                            <thead>
+                                <tr>
+                                    <th>Fecha</th>
+                                    <th>Tipo</th>
+                                    <th>Estado</th>
+                                    <th>Diagnóstico</th>
+                                    <th class="text-center">Acciones</th>
+                                </tr>
+                            </thead>
+                            <tbody id="detalle-paciente-evaluaciones-body"></tbody>
+                        </table>
+                    </div>
+                    <div id="detalle-paciente-evaluaciones-vacio" class="hidden px-6 py-10 text-center text-gray-500">
+                        Este paciente todaví­a no tiene evaluaciones asociadas.
+                    </div>
+                </section>
+            </div>
+        </section>
+
+        <!-- VISTA: EVALUACIONES -->
+        <section id="vista-evaluaciones" class="vista-seccion hidden max-w-5xl mx-auto animate-fade-in">
+            <header class="mb-10 text-center">
+                <h2 class="text-4xl font-serif font-bold text-primary mb-2">Evaluaciones</h2>
+                <p class="text-gray-500">Elegí el tipo de evaluación para continuar con el flujo correspondiente.</p>
+            </header>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <button type="button" onclick="app.abrirEvaluacionAdulto()"
+                    class="bg-white p-6 rounded-2xl text-left hover:-translate-y-1 hover:shadow-xl transition-all border-l-4 border-action shadow-md min-h-[16rem] flex flex-col">
+                    <div class="flex items-start justify-between gap-4">
+                        <div>
+                            <div class="bg-action/10 w-14 h-14 rounded-full flex items-center justify-center mb-5">
+                                <i data-lucide="clipboard-list" class="text-action w-7 h-7"></i>
+                            </div>
+                            <h3 class="font-bold text-[2rem] leading-[1.15] text-gray-800 max-w-[22rem]">Protocolo de Evaluación de Sincronización Sensorio-Motora (PESSM)</h3>
+                        </div>
+                        <span class="text-xs font-semibold uppercase tracking-[0.18em] text-action bg-action/10 px-3 py-1 rounded-full shrink-0 mt-1">Disponible</span>
+                    </div>
+                    <div class="mt-auto pt-6 inline-flex items-center gap-2 text-sm font-semibold text-action">
+                        Iniciar protocolo
+                        <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                    </div>
+                </button>
+                <button type="button" onclick="app.abrirEvaluacionNino()"
+                    class="bg-white p-6 rounded-2xl text-left hover:-translate-y-1 hover:shadow-xl transition-all border-l-4 border-action shadow-md min-h-[16rem] flex flex-col">
+                    <div class="flex items-start justify-between gap-4">
+                        <div>
+                            <div class="bg-action/10 w-14 h-14 rounded-full flex items-center justify-center mb-5">
+                                <i data-lucide="baby" class="text-action w-7 h-7"></i>
+                            </div>
+                            <h3 class="font-bold text-[2rem] leading-[1.15] text-gray-800 max-w-[22rem]">Evaluación Niño/a</h3>
+                        </div>
+                        <span class="text-xs font-semibold uppercase tracking-[0.18em] text-action bg-action/10 px-3 py-1 rounded-full shrink-0 mt-1">Disponible</span>
+                    </div>
+                    <div class="mt-auto pt-6 inline-flex items-center gap-2 text-sm font-semibold text-action">
+                        Abrir módulos
+                        <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                    </div>
+                </button>
+            </div>
+        </section>
+
+        <!-- VISTA: EVALUACIÓN NIÑO -->
+        <section id="vista-evaluacion-nino" class="vista-seccion hidden max-w-6xl mx-auto animate-fade-in">
+            <header class="mb-8 flex flex-col md:flex-row md:items-end md:justify-between gap-4">
+                <div>
+                    <p class="text-sm font-semibold uppercase tracking-[0.22em] text-action">BNPM</p>
+                    <h2 class="text-4xl font-serif font-bold text-primary mt-2">Evaluación Niño</h2>
+                    <p class="text-gray-500 mt-2">Seleccioná el módulo a completar según el contexto clínico o familiar.</p>
+                </div>
+                <button type="button" onclick="app.cambiarVista('evaluaciones')"
+                    class="bg-white border border-slate-200 text-slate-700 px-5 py-2.5 rounded-xl font-semibold hover:bg-slate-50 transition inline-flex items-center gap-2">
+                    <i data-lucide="arrow-left" class="w-4 h-4"></i> Volver a Evaluaciones
+                </button>
+            </header>
+
+            <div class="grid grid-cols-1 xl:grid-cols-2 gap-8">
+                <button type="button" onclick="app.abrirModuloNino('a')" class="child-eval-card child-eval-card-family">
+                    <div class="child-eval-card-head">
+                        <div class="child-eval-card-icon">
+                            <i data-lucide="home" class="w-7 h-7"></i>
+                        </div>
+                        <span class="child-eval-card-badge">Familia</span>
+                    </div>
+                    <h3 class="child-eval-card-title">Módulo A</h3>
+                    <div class="child-eval-card-footer">
+                        <span>Completar dentro de la plataforma</span>
+                        <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                    </div>
+                </button>
+
+                <button type="button" onclick="app.abrirModuloNino('b')" class="child-eval-card child-eval-card-clinical">
+                    <div class="child-eval-card-head">
+                        <div class="child-eval-card-icon">
+                            <i data-lucide="stethoscope" class="w-7 h-7"></i>
+                        </div>
+                        <span class="child-eval-card-badge">Registro clínico</span>
+                    </div>
+                    <h3 class="child-eval-card-title">Módulo B</h3>
+                    <p class="child-eval-card-copy">Planilla clínica digital.</p>
+                    <div class="child-eval-card-footer">
+                        <span>Abrir formulario clínico</span>
+                        <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                    </div>
+                </button>
+            </div>
+        </section>
+
+        <!-- VISTA: BNPM MODULO A -->
+        <section id="vista-bnpm-modulo-a" class="vista-seccion hidden max-w-6xl mx-auto animate-fade-in">
+            <div id="bnpm-modulo-a-root"></div>
+        </section>
+
+        <!-- VISTA: BNPM MODULO B -->
+        <section id="vista-bnpm-modulo-b" class="vista-seccion hidden max-w-6xl mx-auto animate-fade-in">
+            <div id="bnpm-modulo-b-root"></div>
+        </section>
+
+        <!-- VISTA: PROTOCOLO -->
+        <section id="vista-protocolo" class="vista-seccion hidden max-w-4xl mx-auto animate-fade-in">
+            <header class="mb-6 border-b pb-4">
+                <div class="flex flex-col md:flex-row md:items-start md:justify-between gap-4">
+                    <div>
+                        <h2 class="text-3xl font-serif font-bold text-primary">Protocolo de Evaluación de Sincronización Sensorio-Motora (PESSM)</h2>
+                        <div class="flex gap-2 mt-4 text-sm font-medium text-gray-400">
+                            <span id="ind-paso-1" class="text-primary border-b-2 border-primary pb-1">1. Prep.
+                                Profesional</span> >
+                            <span id="ind-paso-2">2. Prep. Participante</span> >
+                            <span id="ind-paso-3">3. Carga de Datos</span> >
+                            <span id="ind-paso-4">4. Medición</span>
+                        </div>
+                    </div>
+                    <button type="button" onclick="app.cancelarEvaluacionAdulto()"
+                        class="bg-white border border-slate-200 text-slate-700 px-4 py-2 rounded-lg font-semibold hover:bg-slate-50 transition inline-flex items-center gap-2 self-start">
+                        <i data-lucide="arrow-left" class="w-4 h-4"></i> Cancelar
+                    </button>
+                </div>
+            </header>
+
+            <form id="evaluationFormMedicion" novalidate onsubmit="protocolo.guardarEvaluacion(event); return false;"
+                class="bg-white p-8 rounded-xl shadow-lg border border-gray-100">
+
+                <!-- PASO 1 -->
+                <div id="paso-1" class="paso-container block">
+                    <h3 class="text-xl font-bold mb-4 text-primary">Paso 1: Preparación del Profesional</h3>
+
+                    <div
+                        class="mb-6 bg-blue-50 border border-blue-200 rounded-lg p-4 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+                        <div class="flex items-center gap-3">
+                            <div class="bg-blue-100 p-2 rounded-full">
+                                <i data-lucide="file-text" class="text-blue-600 w-6 h-6"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-blue-800 text-sm">Documentos para ver, imprimir o descargar</h4>
+                                <p class="text-xs text-blue-600">Disponibles antes de iniciar la preparación del participante.</p>
+                            </div>
+                        </div>
+                        <div class="flex flex-col sm:flex-row gap-2 w-full sm:w-auto">
+                            <a href="/consentimiento.pdf" target="_blank"
+                                class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-sm font-semibold flex items-center justify-center gap-2 transition whitespace-nowrap shadow-sm">
+                                <i data-lucide="external-link" class="w-4 h-4"></i> Consentimiento Informado
+                            </a>
+                            <a href="/PESSM%20-%20AUTORREPORTE.pdf" target="_blank"
+                                class="bg-white hover:bg-blue-50 text-blue-700 border border-blue-200 px-4 py-2 rounded-lg text-sm font-semibold flex items-center justify-center gap-2 transition whitespace-nowrap shadow-sm">
+                                <i data-lucide="external-link" class="w-4 h-4"></i> PESSM - AUTORREPORTE
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="bg-gray-50 p-6 rounded-lg border">
+                        <div class="flex items-center justify-between gap-4 mb-3 border-b pb-1">
+                            <h4 class="font-semibold text-gray-800">Materiales Necesarios</h4>
+                            <button type="button" id="toggle-paso-1-materiales"
+                                onclick="protocolo.toggleChecklistBlock('paso-1-materiales')"
+                                class="text-sm font-semibold text-action hover:text-action/80 transition">Marcar todos</button>
+                        </div>
+                        <div id="paso-1-materiales" class="space-y-3 bg-white p-4 rounded border border-gray-200 shadow-sm mb-6">
+                            <label class="flex items-start gap-3 cursor-pointer"><input type="checkbox"
+                                    class="w-5 h-5 mt-0.5 text-primary rounded border-gray-300"> <span
+                                    class="text-gray-700 text-sm">Cámara o dispositivo de grabación con batería cargada
+                                    y espacio disponible.</span></label>
+                            <label class="flex items-start gap-3 cursor-pointer"><input type="checkbox"
+                                    class="w-5 h-5 mt-0.5 text-primary rounded border-gray-300"> <span
+                                    class="text-gray-700 text-sm">Parlantes calibrados a volumen
+                                    estándar.</span></label>
+                            <label class="flex items-start gap-3 cursor-pointer"><input type="checkbox"
+                                    class="w-5 h-5 mt-0.5 text-primary rounded border-gray-300"> <span
+                                    class="text-gray-700 text-sm">Cuestionario impreso o acceso digital.</span></label>
+                            <label class="flex items-start gap-3 cursor-pointer"><input type="checkbox"
+                                    class="w-5 h-5 mt-0.5 text-primary rounded border-gray-300"> <span
+                                    class="text-gray-700 text-sm">Centímetro o regla.</span></label>
+                            <label class="flex items-start gap-3 cursor-pointer"><input type="checkbox"
+                                    class="w-5 h-5 mt-0.5 text-primary rounded border-gray-300"> <span
+                                    class="text-gray-700 text-sm">Impresión del Consentimiento Informado.</span></label>
+                        </div>
+
+                        <div class="flex items-center justify-between gap-4 mb-3 border-b pb-1">
+                            <h4 class="font-semibold text-gray-800">Organización del Espacio</h4>
+                            <button type="button" id="toggle-paso-1-espacio"
+                                onclick="protocolo.toggleChecklistBlock('paso-1-espacio')"
+                                class="text-sm font-semibold text-action hover:text-action/80 transition">Marcar todos</button>
+                        </div>
+                        <div id="paso-1-espacio" class="space-y-3 bg-white p-4 rounded border border-gray-200 shadow-sm">
+                            <label class="flex items-start gap-3 cursor-pointer"><input type="checkbox"
+                                    class="w-5 h-5 mt-0.5 text-primary rounded border-gray-300"> <span
+                                    class="text-gray-700 text-sm">Organizar espacio de medición (trípode, cámara, tela,
+                                    instrumento, mesa, documentación, etc.).</span></label>
+                            <label class="flex items-start gap-3 cursor-pointer"><input type="checkbox"
+                                    class="w-5 h-5 mt-0.5 text-primary rounded border-gray-300"> <span
+                                    class="text-gray-700 text-sm">Revisar silencio, iluminación, silla, distancias y
+                                    referencias.</span></label>
+                            <label class="flex items-start gap-3 cursor-pointer"><input type="checkbox"
+                                    class="w-5 h-5 mt-0.5 text-primary rounded border-gray-300"> <span
+                                    class="text-gray-700 text-sm">Configurar cámara fija (HD 60fps, misma distancia y
+                                    ángulo; referencias en el suelo).</span></label>
+                        </div>
+                    </div>
+
+                    <div class="mt-8 flex flex-col items-end gap-2">
+                        <p id="ayuda-paso-1-checklist" class="text-sm text-amber-700">Completá todos los ítems del checklist para continuar.</p>
+                        <button type="button" id="btn-paso-1-siguiente" onclick="protocolo.irPaso(2)"
+                            class="bg-action text-white px-6 py-2.5 rounded-lg font-semibold hover:bg-action/90 flex items-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed">Siguiente
+                            <i data-lucide="arrow-right" class="w-4 h-4"></i></button>
+                    </div>
+                </div>
+
+                <!-- PASO 2 -->
+                <div id="paso-2" class="paso-container hidden">
+                    <h3 class="text-xl font-bold mb-4 text-primary">Paso 2: Preparación del Participante</h3>
+
+                    <div class="bg-gray-50 p-6 rounded-lg border">
+                        <div class="mb-6 bg-blue-50 border border-blue-200 rounded-lg p-4">
+                            <div class="flex items-start gap-3 mb-3">
+                                <div class="bg-blue-100 p-2 rounded-full">
+                                    <i data-lucide="volume-2" class="text-blue-600 w-5 h-5"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-blue-800 text-sm">Prueba previa de audio</h4>
+                                    <p class="text-xs text-blue-600">
+                                        Este audio es solo para verificar volumen, comprensión de la consigna y respuesta del paciente antes de comenzar las mediciones.
+                                        No genera registros ni forma parte del protocolo.
+                                    </p>
+                                </div>
+                            </div>
+                            <audio controls preload="none" controlslist="nodownload noplaybackrate" class="w-full">
+                                <source src="/audios/isocronos/metronomo_isocrono120bpm.wav" type="audio/wav">
+                                Tu navegador no puede reproducir este audio de prueba.
+                            </audio>
+                        </div>
+
+                        <div class="flex items-center justify-between gap-4 mb-3 border-b pb-1">
+                            <h4 class="font-semibold text-gray-800">Checklist de Preparación</h4>
+                            <button type="button" id="toggle-paso-2-preparacion"
+                                onclick="protocolo.toggleChecklistBlock('paso-2-preparacion')"
+                                class="text-sm font-semibold text-action hover:text-action/80 transition">Marcar todos</button>
+                        </div>
+                        <div id="paso-2-preparacion" class="space-y-3 bg-white p-4 rounded border border-gray-200 shadow-sm">
+                            <label class="flex items-start gap-3 cursor-pointer">
+                                <input type="checkbox" class="w-5 h-5 mt-0.5 text-primary rounded border-gray-300">
+                                <span class="text-gray-700 text-sm">Entregar, leer y firmar el Consentimiento
+                                    Informado.</span>
+                            </label>
+                            <label class="flex items-start gap-3 cursor-pointer">
+                                <input type="checkbox" class="w-5 h-5 mt-0.5 text-primary rounded border-gray-300">
+                                <span class="text-gray-700 text-sm">Ubicar al paciente al frente del tambor.</span>
+                            </label>
+                            <label class="flex items-start gap-3 cursor-pointer">
+                                <input type="checkbox" class="w-5 h-5 mt-0.5 text-primary rounded border-gray-300">
+                                <span class="text-gray-700 text-sm">Establecer referencia: centro de la mano sobre el
+                                    centro del tambor.</span>
+                            </label>
+                            <label class="flex items-start gap-3 cursor-pointer">
+                                <input type="checkbox" class="w-5 h-5 mt-0.5 text-primary rounded border-gray-300">
+                                <span class="text-gray-700 text-sm">Revisar el volumen del audio.</span>
+                            </label>
+                            <label class="flex items-start gap-3 cursor-pointer">
+                                <input type="checkbox" class="w-5 h-5 mt-0.5 text-primary rounded border-gray-300">
+                                <span class="text-gray-700 text-sm">Hacer pruebas cortas para confirmar que el video
+                                    registra bien la amplitud del movimiento.</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="mt-8 flex flex-col gap-2 md:flex-row md:items-center md:justify-between">
+                        <button type="button" onclick="protocolo.irPaso(1)"
+                            class="bg-gray-200 text-gray-700 px-6 py-2.5 rounded-lg font-semibold hover:bg-gray-300 flex items-center gap-2"><i
+                                data-lucide="arrow-left" class="w-4 h-4"></i> Atrás</button>
+                        <div class="flex flex-col items-end gap-2">
+                            <p id="ayuda-paso-2-checklist" class="text-sm text-amber-700">Completá todos los ítems del checklist para continuar.</p>
+                            <button type="button" id="btn-paso-2-siguiente" onclick="protocolo.irPaso(3)"
+                                class="bg-action text-white px-6 py-2.5 rounded-lg font-semibold hover:bg-action/90 flex items-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed">Siguiente
+                                <i data-lucide="arrow-right" class="w-4 h-4"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PASO 3 -->
+                <div id="paso-3" class="paso-container hidden">
+                    <h3 class="text-xl font-bold mb-4 text-primary">Paso 3: Carga de Datos Clínicos</h3>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+                        <!-- Datos Principales -->
+                        <div class="form-group">
+                            <label class="block text-sm font-semibold text-gray-700 mb-1">Nombre y apellido *</label>
+                            <input type="text" id="dat-nombre" required
+                                placeholder="Nombre y apellido"
+                                class="w-full border rounded-lg p-2.5 focus:border-primary bg-gray-50 outline-none">
+                        </div>
+                        <div class="form-group">
+                            <label class="block text-sm font-semibold text-gray-700 mb-1">Fecha *</label>
+                            <input type="date" id="dat-fecha" required
+                                class="w-full border rounded-lg p-2.5 focus:border-primary bg-gray-50 outline-none">
+                        </div>
+
+                        <!-- Contacto e Investigador -->
+                        <div class="form-group">
+                            <label class="block text-sm font-semibold text-gray-700 mb-1">E-mail</label>
+                            <input type="email" id="dat-email"
+                                placeholder="nombre@dominio.com"
+                                class="w-full border rounded-lg p-2.5 focus:border-primary bg-gray-50 outline-none">
+                        </div>
+                        <div class="form-group hidden">
+                            <label class="block text-sm font-semibold text-gray-700 mb-1">Music therapist
+                                researcher</label>
+                            <input type="hidden" id="dat-investigador"
+                                class="w-full border rounded-lg p-2.5 focus:border-primary bg-gray-50 outline-none">
+                        </div>
+
+                        <!-- Datos Clínicos -->
+                        <div class="form-group md:col-span-2">
+                            <label class="block text-sm font-semibold text-gray-700 mb-1">Medicación</label>
+                            <textarea id="dat-medicacion" rows="2"
+                                class="w-full border rounded-lg p-2.5 focus:border-primary bg-gray-50 outline-none resize-none"
+                                placeholder="Indicar si se encuentra bajo tratamiento farmacológico..."></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label class="block text-sm font-semibold text-gray-700 mb-1">Psicopatología</label>
+                            <input type="text" id="dat-psicopatologia"
+                                class="w-full border rounded-lg p-2.5 focus:border-primary bg-gray-50 outline-none">
+                        </div>
+                        <div class="form-group">
+                            <label class="block text-sm font-semibold text-gray-700 mb-1">Diagnóstico médico</label>
+                            <input type="text" id="dat-diagnostico"
+                                class="w-full border rounded-lg p-2.5 focus:border-primary bg-gray-50 outline-none">
+                        </div>
+
+                        <div class="form-group">
+                            <label class="block text-sm font-semibold text-gray-700 mb-1">Fecha de nacimiento</label>
+                            <input type="text" id="dat-fecha-nacimiento" placeholder="dd/mm/aaaa"
+                                class="w-full border rounded-lg p-2.5 focus:border-primary bg-gray-50 outline-none">
+                        </div>
+                        <div class="form-group">
+                            <label class="block text-sm font-semibold text-gray-700 mb-1">Edad</label>
+                            <input type="number" id="dat-edad" min="0" step="1"
+                                class="w-full border rounded-lg p-2.5 focus:border-primary bg-gray-50 outline-none">
+                        </div>
+                        <div class="form-group">
+                            <label class="block text-sm font-semibold text-gray-700 mb-1">Formación musical en años</label>
+                            <input type="number" id="dat-formacion-musical-anios" min="0" step="1"
+                                class="w-full border rounded-lg p-2.5 focus:border-primary bg-gray-50 outline-none">
+                        </div>
+                        <div class="form-group">
+                            <label class="block text-sm font-semibold text-gray-700 mb-1">Tipo de formación musical</label>
+                            <select id="dat-tipo-formacion-musical"
+                                class="w-full border rounded-lg p-2.5 focus:border-primary bg-gray-50 outline-none">
+                                <option value="">Seleccione...</option>
+                                <option value="Instrumental">Instrumental</option>
+                                <option value="Vocal">Vocal</option>
+                                <option value="Instrumental y vocal">Instrumental y/o vocal</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label class="block text-sm font-semibold text-gray-700 mb-1">Modalidad de formación musical</label>
+                            <select id="dat-modalidad-formacion-musical"
+                                class="w-full border rounded-lg p-2.5 focus:border-primary bg-gray-50 outline-none">
+                                <option value="">Seleccione...</option>
+                                <option value="Grupal">Grupal</option>
+                                <option value="Individual">Individual</option>
+                            </select>
+                        </div>
+
+                        <!-- Lateralidad -->
+                        <div class="form-group">
+                            <label class="block text-sm font-semibold text-gray-700 mb-1">Tipo de paciente</label>
+                            <select id="dat-tipo-paciente" disabled
+                                class="w-full border rounded-lg p-2.5 bg-gray-100 text-gray-500 outline-none cursor-not-allowed">
+                                <option value="adulto" selected>Adulto</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label class="block text-sm font-semibold text-gray-700 mb-1">Mano hábil *</label>
+                            <select id="dat-dominancia" required
+                                class="w-full border rounded-lg p-2.5 focus:border-primary bg-gray-50 outline-none">
+                                <option value="">Seleccione...</option>
+                                <option value="Diestro">Diestro</option>
+                                <option value="Zurdo">Zurdo</option>
+                                <option value="Ambidiestro">Ambidiestro</option>
+                            </select>
+                        </div>
+                        <div class="form-group border-2 border-action/50 rounded-lg p-3 bg-action/5">
+                            <label class="block text-sm font-bold text-action mb-1">Mano que INICIA la prueba *</label>
+                            <select id="dat-mano-inicio" required
+                                class="w-full border rounded p-2 focus:border-action bg-white outline-none">
+                                <option value="Derecha">Derecha</option>
+                                <option value="Izquierda">Izquierda</option>
+                            </select>
+                        </div>
+
+                        <!-- Biométricos -->
+                        <div class="form-group md:col-span-2 bg-blue-50 p-4 rounded-lg border border-blue-100 mt-2">
+                            <h4 class="font-bold text-blue-800 mb-4 text-sm flex items-center gap-2"><i
+                                    data-lucide="ruler" class="w-4 h-4"></i> Mediciones de la Mano (cm)</h4>
+                            <p class="text-xs text-amber-700 bg-amber-50 border border-amber-200 rounded-lg px-3 py-2 mb-4">
+                                Las medidas de la mano son opcionales. Si no se cargan, no se calculará el cuantificador de altura de mano alzada, ya que la escala del video depende de esta información.
+                            </p>
+
+                            <div class="text-[11px] text-slate-500 bg-white/80 border border-slate-200 rounded-lg px-3 py-2 mb-4 space-y-1">
+                                <p><span class="font-semibold text-slate-600">MD/MI Mayor - muñeca:</span> Distancia desde la punta del dedo mayor hasta la base de la muñeca.</p>
+                                <p><span class="font-semibold text-slate-600">Medida MD/MI Índice:</span> Largo del dedo índice.</p>
+                            </div>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-y-4 gap-x-6">
+                                <!-- Mano Derecha (MD) -->
+                                <div class="bg-white p-3 rounded border border-gray-200 shadow-sm">
+                                    <label
+                                        class="block text-xs font-bold text-gray-800 mb-2 text-center border-b pb-2">Mano
+                                        Derecha (MD)</label>
+                                    <div class="mt-2">
+                                        <label class="block text-[11px] font-semibold text-gray-600 mb-1">MD Mayor -
+                                            muñeca</label>
+                                        <div class="relative mb-3">
+                                            <input type="number" step="0.1" id="dat-mano-md-mayor"
+                                                placeholder="Ingresar valor"
+                                                class="w-full border rounded p-2 pr-14 text-sm outline-none"
+                                                inputmode="decimal">
+                                            <span class="absolute inset-y-0 right-3 flex items-center text-xs font-semibold text-gray-500">[cm]</span>
+                                        </div>
+                                        <label class="block text-[11px] font-semibold text-gray-600 mb-1">Medida MD
+                                            Índice</label>
+                                        <div class="relative">
+                                            <input type="number" step="0.1" id="dat-mano-md-indice"
+                                                placeholder="Ingresar valor"
+                                                class="w-full border rounded p-2 pr-14 text-sm outline-none"
+                                                inputmode="decimal">
+                                            <span class="absolute inset-y-0 right-3 flex items-center text-xs font-semibold text-gray-500">[cm]</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Mano Izquierda (MI) -->
+                                <div class="bg-white p-3 rounded border border-gray-200 shadow-sm">
+                                    <label
+                                        class="block text-xs font-bold text-gray-800 mb-2 text-center border-b pb-2">Mano
+                                        Izquierda (MI)</label>
+                                    <div class="mt-2">
+                                        <label class="block text-[11px] font-semibold text-gray-600 mb-1">MI Mayor -
+                                            muñeca</label>
+                                        <div class="relative mb-3">
+                                            <input type="number" step="0.1" id="dat-mano-mi-mayor"
+                                                placeholder="Ingresar valor"
+                                                class="w-full border rounded p-2 pr-14 text-sm outline-none"
+                                                inputmode="decimal">
+                                            <span class="absolute inset-y-0 right-3 flex items-center text-xs font-semibold text-gray-500">[cm]</span>
+                                        </div>
+                                        <label class="block text-[11px] font-semibold text-gray-600 mb-1">Medida MI
+                                            Índice</label>
+                                        <div class="relative">
+                                            <input type="number" step="0.1" id="dat-mano-mi-indice"
+                                                placeholder="Ingresar valor"
+                                                class="w-full border rounded p-2 pr-14 text-sm outline-none"
+                                                inputmode="decimal">
+                                            <span class="absolute inset-y-0 right-3 flex items-center text-xs font-semibold text-gray-500">[cm]</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="mt-8 flex justify-between">
+                        <button type="button" onclick="protocolo.irPaso(2)"
+                            class="bg-gray-200 text-gray-700 px-6 py-2.5 rounded-lg font-semibold hover:bg-gray-300 flex items-center gap-2"><i
+                                data-lucide="arrow-left" class="w-4 h-4"></i> Atrás</button>
+                        <button type="button" onclick="protocolo.irPaso(4)"
+                            class="bg-action text-white px-6 py-2.5 rounded-lg font-semibold hover:bg-action/90 flex items-center gap-2">Siguiente
+                            <i data-lucide="arrow-right" class="w-4 h-4"></i></button>
+                    </div>
+                </div>
+
+                <!-- PASO 4 -->
+                <div id="paso-4" class="paso-container hidden">
+                    <h3 class="text-xl font-bold mb-4 text-primary">Paso 4: Inicio de grabación de videos</h3>
+
+                    <div class="bg-primary/5 border border-primary/15 rounded-xl p-5 mb-6">
+                        <p class="text-xs font-bold uppercase tracking-[0.18em] text-primary mb-2">Consigna sugerida para leer al paciente</p>
+                        <p class="text-sm text-slate-700 leading-7">
+                            Vamos a iniciar las mediciones y el registro de video de tu mano. Voy a poner a grabar el video y luego vas a escuchar un metrónomo. Cuando empiece a sonar, tenés que sincronizarte tocando el mismo ritmo. El movimiento se inicia en el centro del parche y termina en el mismo lugar. Es importante que se escuche el sonido del instrumento. Cuando finalices, voy a detener la grabación del video.
+                        </p>
+                    </div>
+
+                    <div class="bg-gray-100 border border-gray-300 rounded-xl p-6 mb-6">
+                        <h4 class="font-bold text-gray-800 mb-2 flex items-center gap-2"><i data-lucide="music"
+                                class="w-5 h-5"></i> Audios</h4>
+                        <p class="text-sm text-gray-600 mb-4">Se generarán 13 audios por mano (5 isócronos, 4 abruptos, 4 rampa) barajados de forma aleatoria.</p>
+
+                        <button type="button" id="btn-generar-playlist"
+                            onclick="app.marcarFormularioAdultoComoModificado(); protocolo.generarPlaylistCompleta();"
+                            class="bg-action text-white px-6 py-3 rounded-lg shadow hover:bg-action/90 transition font-bold w-full text-lg">
+                            Generar Sesión de 26 Audios
+                        </button>
+
+                        <div id="zona-reproductor"
+                            class="mt-6 hidden bg-white p-6 rounded-lg border-2 border-primary shadow-lg">
+                            <div class="text-center mb-6 pb-4 border-b-2 border-dashed border-gray-200">
+                                <p class="text-sm font-bold uppercase tracking-widest text-gray-500 mb-2">Mano en evaluación:</p>
+                                <p id="indicador-mano" class="text-4xl font-black text-red-600 tracking-wider">DERECHA
+                                </p>
+                            </div>
+
+                            <p class="text-sm font-bold text-gray-700 mb-2">Pista <span id="contador-audio"
+                                    class="text-primary text-lg">1</span> de 26</p>
+                            <p class="text-xs text-gray-500 mb-4 font-mono bg-gray-50 p-2 rounded">Archivo: <span
+                                    id="nombre-audio-actual">---</span></p>
+
+                            <audio id="stimulusAudioPlayer" controls controlsList="noplaybackrate nodownload"
+                                disablePictureInPicture class="w-full mb-4"></audio>
+
+                            <!-- MUSICAL SKILLS POR PISTA -->
+                            <div class="space-y-4 mt-6 pt-4 border-t border-gray-100">
+                                <h4 class="font-bold text-gray-700 mb-2 flex items-center gap-2"><i
+                                        data-lucide="clipboard-check" class="w-5 h-5 text-action"></i> Evaluación de la
+                                    Pista Actual</h4>
+                                <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                                    <div class="bg-gray-50 p-3 rounded border">
+                                        <label class="block text-sm font-semibold text-primary mb-2">Rhythm
+                                            Identification</label>
+                                        <select id="skill-rhythm"
+                                            class="w-full border rounded p-2 text-sm outline-none bg-white">
+                                            <option value="No evaluado">No evaluado</option>
+                                            <option value="Consistente">Consistente</option>
+                                            <option value="Inconsistente">Inconsistente</option>
+                                            <option value="Rara vez">Rara vez</option>
+                                            <option value="Nunca">Nunca</option>
+                                        </select>
+                                    </div>
+                                    <div class="bg-gray-50 p-3 rounded border">
+                                        <label class="block text-sm font-semibold text-primary mb-2">Tempo
+                                            Variations</label>
+                                        <select id="skill-tempo"
+                                            class="w-full border rounded p-2 text-sm outline-none bg-white">
+                                            <option value="No evaluado">No evaluado</option>
+                                            <option value="Consistente">Consistente</option>
+                                            <option value="Inconsistente">Inconsistente</option>
+                                            <option value="Rara vez">Rara vez</option>
+                                            <option value="Nunca">Nunca</option>
+                                        </select>
+                                    </div>
+                                    <div class="bg-gray-50 p-3 rounded border">
+                                        <label class="block text-sm font-semibold text-primary mb-2">Rhythmic
+                                            Accuracy</label>
+                                        <select id="skill-accuracy"
+                                            class="w-full border rounded p-2 text-sm outline-none bg-white">
+                                            <option value="No evaluado">No evaluado</option>
+                                            <option value="Consistente">Consistente</option>
+                                            <option value="Inconsistente">Inconsistente</option>
+                                            <option value="Rara vez">Rara vez</option>
+                                            <option value="Nunca">Nunca</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="flex justify-between items-center mt-6 gap-3">
+                                <button type="button" id="btn-audio-anterior"
+                                    onclick="app.marcarFormularioAdultoComoModificado(); protocolo.anteriorAudio();"
+                                    class="bg-gray-200 text-gray-700 hover:bg-gray-300 px-6 py-3 rounded-lg font-bold flex items-center gap-2 transition shadow-md disabled:opacity-50 disabled:cursor-not-allowed">
+                                    <i data-lucide="skip-back" class="w-5 h-5"></i> Pista anterior
+                                </button>
+                                <button type="button" id="btn-siguiente-audio"
+                                    onclick="app.marcarFormularioAdultoComoModificado(); protocolo.siguienteAudio();"
+                                    class="bg-gray-800 text-white hover:bg-black px-6 py-3 rounded-lg font-bold flex items-center gap-2 transition shadow-md">
+                                    Guardar y Siguiente Pista <i data-lucide="skip-forward" class="w-5 h-5"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-8 flex justify-between border-t pt-6">
+                        <button type="button" onclick="protocolo.irPaso(3)"
+                            class="bg-gray-200 text-gray-700 px-6 py-2.5 rounded-lg font-semibold hover:bg-gray-300 flex items-center gap-2"><i
+                                data-lucide="arrow-left" class="w-4 h-4"></i> Atrás</button>
+                        <button type="submit"
+                            class="bg-green-600 text-white px-8 py-2.5 rounded-lg font-bold shadow-lg hover:bg-green-700 transition flex items-center gap-2"><i
+                                data-lucide="save" class="w-5 h-5"></i> Finalizar y Guardar Sesión Completa</button>
+                    </div>
+                </div>
+
+            </form>
+        </section>
+
+
+        <!-- MODAL: DETALLE DE PACIENTE CON VIDEOS -->
+        <div id="modal-detalle" class="hidden fixed inset-0 z-50 flex items-center justify-center p-4"
+            style="background:rgba(0,0,0,0.5);backdrop-filter:blur(4px)">
+            <div class="bg-white rounded-2xl shadow-2xl w-full max-w-5xl max-h-[90vh] flex flex-col overflow-hidden">
+                <!-- Header del modal -->
+                <div class="bg-primary text-white px-8 py-5 flex justify-between items-center shrink-0">
+                    <div>
+                        <h3 id="modal-titulo" class="text-xl font-bold font-serif">Paciente</h3>
+                        <p id="modal-subtitulo" class="text-secondary text-sm mt-1"></p>
+                    </div>
+                    <button onclick="app.cerrarModal()" class="text-white/70 hover:text-white transition p-2">
+                        <i data-lucide="x" class="w-6 h-6"></i>
+                    </button>
+                </div>
+
+                <!-- Info rapida -->
+                <div id="modal-info"
+                    class="px-8 py-4 bg-gray-50 border-b grid grid-cols-2 md:grid-cols-4 gap-3 text-sm shrink-0">
+                </div>
+
+                <div class="px-8 py-5 border-b bg-white shrink-0">
+                    <div class="flex items-center justify-between gap-4 mb-4">
+                        <h4 class="font-bold text-primary text-lg flex items-center gap-2">
+                            <i data-lucide="folder-kanban" class="w-5 h-5"></i> Análisis disponibles
+                        </h4>
+                        <span id="modal-analisis-contador"
+                            class="text-sm text-gray-500 bg-gray-100 px-3 py-1 rounded-full font-medium">Buscando...</span>
+                    </div>
+                    <div id="modal-analisis-disponibles"
+                        class="space-y-2 max-h-48 overflow-y-auto pr-1">
+                        <div class="rounded-2xl border border-dashed border-gray-300 bg-gray-50 px-4 py-6 text-sm text-gray-500 text-center">
+                            Aún no se cargaron resultados de análisis.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tabla de pistas con videos -->
+                <div class="flex-1 overflow-y-auto px-8 py-5">
+                    <div class="flex items-center justify-between mb-4">
+                        <h4 class="font-bold text-primary text-lg flex items-center gap-2">
+                            <i data-lucide="video" class="w-5 h-5"></i> Videos por pista
+                        </h4>
+                        <span id="modal-contador-videos"
+                            class="text-sm text-gray-500 bg-gray-100 px-3 py-1 rounded-full font-medium"></span>
+                    </div>
+                    <div class="overflow-x-auto">
+                        <table class="interactive-table w-full">
+                            <thead>
+                                <tr>
+                                    <th class="w-12">N°</th>
+                                    <th class="w-20">Mano</th>
+                                    <th>Archivo Audio</th>
+                                    <th>Ritmo</th>
+                                    <th>Tempo</th>
+                                    <th>Precisión</th>
+                                    <th class="w-48 text-center">Video</th>
+                                </tr>
+                            </thead>
+                            <tbody id="modal-tabla-body"></tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- Footer del modal -->
+                <div class="px-8 py-4 bg-gray-50 border-t flex justify-end gap-3 shrink-0">
+                    <button onclick="app.cerrarModal()"
+                        class="bg-gray-200 text-gray-700 px-5 py-2 rounded-lg font-semibold hover:bg-gray-300 transition">Cerrar</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- MODAL: REPRODUCTOR DE VIDEO -->
+        <div id="modal-video" class="hidden fixed inset-0 z-[60] flex items-center justify-center p-4"
+            style="background:rgba(0,0,0,0.7);backdrop-filter:blur(6px)">
+            <div class="bg-black rounded-2xl shadow-2xl max-w-3xl w-full overflow-hidden">
+                <div class="flex justify-between items-center px-5 py-3 bg-gray-900">
+                    <p id="modal-video-titulo" class="text-white font-semibold text-sm"></p>
+                    <button onclick="app.cerrarVideoModal()" class="text-gray-400 hover:text-white transition p-1">
+                        <i data-lucide="x" class="w-5 h-5"></i>
+                    </button>
+                </div>
+                <video id="modal-video-player" controls class="w-full" style="max-height:70vh"></video>
+            </div>
+        </div>
+
+        <!-- MODAL: RESULTADOS DE ANALISIS -->
+        <div id="modal-analisis" class="hidden fixed inset-0 z-[70] flex items-center justify-center p-4"
+            style="background:rgba(0,0,0,0.65);backdrop-filter:blur(6px)">
+            <div class="bg-white rounded-2xl shadow-2xl w-full max-w-7xl max-h-[94vh] overflow-hidden flex flex-col">
+                <div class="bg-primary text-white px-6 py-5 flex items-start justify-between gap-4">
+                    <div>
+                        <h3 id="modal-analisis-titulo" class="text-xl font-bold font-serif">Resultados del análisis</h3>
+                        <p id="modal-analisis-subtitulo" class="text-secondary text-sm mt-1"></p>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <button id="btn-analisis-pdf"
+                            class="bg-white text-primary hover:bg-gray-100 px-4 py-2 rounded-lg font-semibold text-sm transition flex items-center gap-2">
+                            <i data-lucide="file-down" class="w-4 h-4"></i> Descargar PDF
+                        </button>
+                        <button onclick="app.cerrarAnalisisModal()"
+                            class="text-white/90 hover:text-white border border-white/20 px-4 py-2 rounded-lg font-semibold text-sm transition flex items-center gap-2">
+                            <i data-lucide="arrow-left" class="w-4 h-4"></i> Volver
+                        </button>
+                    </div>
+                </div>
+                <div class="px-6 py-5 border-b bg-gray-50">
+                    <div class="bg-white border rounded-2xl p-4">
+                        <div>
+                            <div class="flex items-center justify-between gap-4">
+                                <div>
+                                    <p class="text-xs uppercase tracking-[0.2em] text-gray-400 font-semibold">Resumen del análisis</p>
+                                    <p id="modal-analisis-encabezado" class="text-sm font-semibold text-gray-800 mt-1"></p>
+                                    <p id="modal-analisis-archivo" class="text-xs text-gray-500 mt-1 break-all"></p>
+                                </div>
+                                <span id="modal-analisis-estado"
+                                    class="inline-flex items-center rounded-full px-3 py-1 text-xs font-bold bg-emerald-100 text-emerald-700">Disponible</span>
+                            </div>
+                            <div id="modal-analisis-resumen"
+                                class="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-6 gap-2 mt-3"></div>
+                            <div id="modal-analisis-cuantificadores" class="mt-5 pt-5 border-t">
+                                <p class="text-xs uppercase tracking-[0.2em] text-gray-400 font-semibold">Resultados del análisis</p>
+                                <div class="overflow-x-auto mt-3">
+                                    <table class="w-full text-sm">
+                                        <thead class="bg-primary text-white">
+                                            <tr>
+                                                <th class="text-left px-3 py-2 font-semibold">Cuantificador</th>
+                                                <th class="text-left px-3 py-2 font-semibold">Resultado</th>
+                                                <th class="text-left px-3 py-2 font-semibold">Valor esperado</th>
+                                                <th class="text-left px-3 py-2 font-semibold">Valoración clínica</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody id="modal-analisis-cuantificadores-filas" class="divide-y divide-gray-200"></tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+                </div>
+                <!-- Compatibilidad con versiones anteriores de script.js en caché. -->
+                <div class="hidden" aria-hidden="true">
+                    <button id="btn-analisis-ver-resultados" type="button" tabindex="-1"></button>
+                    <div id="modal-analisis-categorias"></div>
+                    <div id="modal-analisis-galeria"></div>
+                </div>
+                <div class="px-6 py-4 border-t bg-gray-50 flex justify-end">
+                    <button onclick="app.cerrarAnalisisModal()"
+                        class="bg-gray-200 text-gray-700 px-5 py-2 rounded-lg font-semibold hover:bg-gray-300 transition">Cerrar</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="modal-analisis-visor" class="hidden fixed inset-0 z-[75] flex items-center justify-center p-4"
+            style="background:rgba(15,23,42,0.78);backdrop-filter:blur(8px)">
+            <div class="bg-slate-950 rounded-3xl shadow-2xl w-full max-w-6xl max-h-[92vh] overflow-hidden flex flex-col">
+                <div class="px-5 py-4 border-b border-white/10 flex items-center justify-between gap-4 text-white">
+                    <div>
+                        <p id="visor-analisis-categoria" class="text-xs uppercase tracking-[0.2em] text-slate-400 font-semibold"></p>
+                        <h4 id="visor-analisis-titulo" class="text-lg font-semibold mt-1"></h4>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <button id="btn-visor-anterior"
+                            class="bg-white/10 hover:bg-white/20 text-white px-3 py-2 rounded-lg transition flex items-center gap-2">
+                            <i data-lucide="arrow-left" class="w-4 h-4"></i> Anterior
+                        </button>
+                        <button id="btn-visor-siguiente"
+                            class="bg-white/10 hover:bg-white/20 text-white px-3 py-2 rounded-lg transition flex items-center gap-2">
+                            Siguiente <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                        </button>
+                        <button onclick="app.cerrarVisorAnalisis()"
+                            class="bg-white text-slate-900 hover:bg-slate-100 px-3 py-2 rounded-lg font-semibold transition flex items-center gap-2">
+                            <i data-lucide="x" class="w-4 h-4"></i> Cerrar
+                        </button>
+                    </div>
+                </div>
+                <div id="visor-analisis-contenido" class="flex-1 overflow-auto bg-slate-900 p-5"></div>
+            </div>
+        </div>
+
+        <div id="modal-observaciones-evaluacion" class="hidden fixed inset-0 z-[80] flex items-center justify-center p-4"
+            style="background:rgba(0,0,0,0.65);backdrop-filter:blur(6px)">
+            <div class="bg-white rounded-2xl shadow-2xl w-full max-w-4xl max-h-[92vh] overflow-hidden flex flex-col">
+                <div class="bg-primary text-white px-6 py-5 flex items-start justify-between gap-4">
+                    <div>
+                        <h3 id="modal-observaciones-titulo" class="text-xl font-bold font-serif">Observaciones de la evaluación</h3>
+                        <p id="modal-observaciones-subtitulo" class="text-secondary text-sm mt-1"></p>
+                    </div>
+                    <button onclick="app.cerrarModalObservacionesEvaluacion()"
+                        class="text-white/90 hover:text-white border border-white/20 px-4 py-2 rounded-lg font-semibold text-sm transition flex items-center gap-2">
+                        <i data-lucide="x" class="w-4 h-4"></i> Cerrar
+                    </button>
+                </div>
+                <div class="flex-1 overflow-y-auto px-6 py-5 bg-slate-50">
+                    <form id="form-observaciones-evaluacion" class="space-y-6">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <label class="block">
+                                <span class="block text-sm font-semibold text-slate-700 mb-1">Disposición durante la evaluación</span>
+                                <select name="disposicion_durante_evaluacion" class="w-full border rounded-lg p-2.5 bg-white outline-none focus:border-primary">
+                                    <option value="">Seleccioná...</option>
+                                    <option value="Óptima">Óptima</option>
+                                    <option value="Buena">Buena</option>
+                                    <option value="Escasa">Escasa</option>
+                                </select>
+                            </label>
+                            <label class="block">
+                                <span class="block text-sm font-semibold text-slate-700 mb-1">Nivel de cooperación</span>
+                                <select name="nivel_cooperacion" class="w-full border rounded-lg p-2.5 bg-white outline-none focus:border-primary">
+                                    <option value="">Seleccioná...</option>
+                                    <option value="Adecuado">Adecuado</option>
+                                    <option value="Fluctuante">Fluctuante</option>
+                                    <option value="Limitado">Limitado</option>
+                                </select>
+                            </label>
+                            <label class="block">
+                                <span class="block text-sm font-semibold text-slate-700 mb-1">Atención orientada a la tarea</span>
+                                <select name="atencion_orientada_tarea" class="w-full border rounded-lg p-2.5 bg-white outline-none focus:border-primary">
+                                    <option value="">Seleccioná...</option>
+                                    <option value="Estable">Estable</option>
+                                    <option value="Moderada">Moderada</option>
+                                    <option value="Fluctuante">Fluctuante</option>
+                                    <option value="Inadecuada">Inadecuada</option>
+                                </select>
+                            </label>
+                            <label class="block">
+                                <span class="block text-sm font-semibold text-slate-700 mb-1">Comprensión de consignas</span>
+                                <select name="comprension_consignas" class="w-full border rounded-lg p-2.5 bg-white outline-none focus:border-primary">
+                                    <option value="">Seleccioná...</option>
+                                    <option value="Adecuada">Adecuada</option>
+                                    <option value="Moderada">Moderada</option>
+                                    <option value="Fluctuante">Fluctuante</option>
+                                    <option value="Inadecuada">Inadecuada</option>
+                                </select>
+                            </label>
+                            <label class="block">
+                                <span class="block text-sm font-semibold text-slate-700 mb-1">Indicadores de fatiga</span>
+                                <select name="indicadores_fatiga" class="w-full border rounded-lg p-2.5 bg-white outline-none focus:border-primary">
+                                    <option value="">Seleccioná...</option>
+                                    <option value="Ausencia">Ausencia</option>
+                                    <option value="Presencia leve">Presencia leve</option>
+                                    <option value="Presencia significativa">Presencia significativa</option>
+                                </select>
+                            </label>
+                            <label class="block">
+                                <span class="block text-sm font-semibold text-slate-700 mb-1">Regulación emocional durante la tarea</span>
+                                <select name="regulacion_emocional" class="w-full border rounded-lg p-2.5 bg-white outline-none focus:border-primary">
+                                    <option value="">Seleccioná...</option>
+                                    <option value="Conservada">Conservada</option>
+                                    <option value="Fluctuante">Fluctuante</option>
+                                    <option value="Inestable">Inestable</option>
+                                </select>
+                            </label>
+                            <label class="block md:col-span-2">
+                                <span class="block text-sm font-semibold text-slate-700 mb-1">Persistencia frente a dificultades</span>
+                                <select name="persistencia_dificultades" class="w-full border rounded-lg p-2.5 bg-white outline-none focus:border-primary">
+                                    <option value="">Seleccioná...</option>
+                                    <option value="Adecuada">Adecuada</option>
+                                    <option value="Parcial">Parcial</option>
+                                    <option value="Reducida">Reducida</option>
+                                </select>
+                            </label>
+                        </div>
+                        <div class="rounded-2xl border border-slate-200 bg-white p-4 text-sm text-slate-600">
+                            Estas observaciones se guardan para esta evaluación y luego se usan en el informe final PDF.
+                        </div>
+                        <label class="block">
+                            <span class="block text-sm font-semibold text-slate-700 mb-1">Aspectos relevantes observados durante la ejecución</span>
+                            <textarea name="integrated_observations" rows="5" class="w-full border rounded-lg p-2.5 bg-white outline-none focus:border-primary resize-none" placeholder="Escribí aquí las observaciones clínicas que querés incluir en el informe final."></textarea>
+                        </label>
+                    </form>
+                </div>
+                <div class="px-6 py-4 border-t bg-gray-50 flex justify-end gap-3">
+                    <button type="button" onclick="app.cerrarModalObservacionesEvaluacion()"
+                        class="bg-gray-200 text-gray-700 px-5 py-2 rounded-lg font-semibold hover:bg-gray-300 transition">Cancelar</button>
+                    <button type="button" onclick="app.guardarObservacionesEvaluacion()"
+                        class="bg-action text-white px-5 py-2 rounded-lg font-semibold hover:bg-action/90 transition">Guardar observaciones</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="modal-error-accion" class="hidden fixed inset-0 z-[90] flex items-center justify-center p-4"
+            style="background:rgba(15,23,42,0.55);backdrop-filter:blur(8px)">
+            <div class="bg-white rounded-[28px] shadow-2xl w-full max-w-2xl overflow-hidden border border-slate-200">
+                <div id="modal-error-accion-encabezado" class="px-6 py-5 bg-gradient-to-r from-rose-50 via-white to-amber-50 border-b border-slate-200 flex items-start justify-between gap-4">
+                    <div class="flex items-start gap-4">
+                        <div id="modal-error-accion-icono-wrap" class="w-12 h-12 rounded-2xl bg-rose-100 text-rose-600 flex items-center justify-center shrink-0">
+                            <i id="modal-error-accion-icono" data-lucide="alert-triangle" class="w-6 h-6"></i>
+                        </div>
+                        <div>
+                            <p id="modal-error-accion-etiqueta" class="text-xs uppercase tracking-[0.2em] text-slate-400 font-semibold">Aviso</p>
+                            <h3 id="modal-error-accion-titulo" class="text-xl font-bold text-slate-800 mt-1">No se pudo completar la acción</h3>
+                            <p id="modal-error-accion-resumen" class="text-sm text-slate-500 mt-1"></p>
+                        </div>
+                    </div>
+                    <button type="button" onclick="app.cerrarModalErrorAccion()"
+                        class="text-slate-400 hover:text-slate-700 transition p-2 rounded-lg">
+                        <i data-lucide="x" class="w-5 h-5"></i>
+                    </button>
+                </div>
+                <div class="px-6 py-5 space-y-4">
+                    <div id="modal-error-accion-detalles"
+                        class="hidden rounded-2xl border border-amber-200 bg-amber-50 px-4 py-4 text-sm text-slate-700 space-y-2">
+                    </div>
+                    <div id="modal-error-accion-ayuda"
+                        class="hidden rounded-2xl border border-slate-200 bg-slate-50 px-4 py-4 text-sm text-slate-600">
+                    </div>
+                </div>
+                <div class="px-6 py-4 bg-slate-50 border-t border-slate-200 flex justify-end">
+                    <button id="modal-error-accion-boton" type="button" onclick="app.cerrarModalErrorAccion()"
+                        class="bg-primary text-white px-6 py-2.5 rounded-xl font-semibold hover:bg-primary/90 transition">
+                        Entendido
+                    </button>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.31/jspdf.plugin.autotable.min.js"></script>
+
+    <script src="script.js?v=20260905-resultados"></script>
+</body>
+
+</html>

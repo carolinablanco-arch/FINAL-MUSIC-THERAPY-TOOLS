@@ -1,0 +1,26 @@
+services:
+  - type: web
+    name: musicoterapia-app
+    runtime: docker
+    plan: starter
+    dockerfilePath: ./Dockerfile
+    healthCheckPath: /health
+    envVars:
+      - key: PORT
+        value: 10000
+      - key: PYTHON_PORT
+        value: 5000
+      - key: PYTHON_API_URL
+        value: http://127.0.0.1:5000
+      - key: DATA_DIR
+        value: /opt/render/project/src/data
+      - key: PYTHONIOENCODING
+        value: utf-8
+      - key: PYTHONUTF8
+        value: "1"
+      - key: FLASK_DEBUG
+        value: "0"
+    disk:
+      name: musicoterapia-data
+      mountPath: /opt/render/project/src/data
+      sizeGB: 10

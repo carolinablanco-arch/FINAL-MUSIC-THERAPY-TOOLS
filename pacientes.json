@@ -1,0 +1,3892 @@
+[
+  {
+    "fecha": "2026-02-21T13:55:05.030Z",
+    "nombre": "ddd",
+    "email": "",
+    "dominancia": "Diestro",
+    "diagnostico": "xddd",
+    "psicopatologia": "",
+    "medicacion": "",
+    "mano": {
+      "largo": "",
+      "ancho": ""
+    },
+    "playlistUsada": [],
+    "skills": {
+      "rhythmIdentification": "Adecuado",
+      "tempoVariations": "Adecuado",
+      "rhythmicAccuracy": "Adecuado"
+    }
+  },
+  {
+    "fecha": "2026-02-21",
+    "nombre": "d",
+    "email": "",
+    "investigador": "",
+    "medicacion": "",
+    "psicopatologia": "",
+    "diagnostico": "d",
+    "dominancia": "Diestro",
+    "manoInicio": "Derecha",
+    "medidasManos": {
+      "md_mayor": "",
+      "md_indice": "",
+      "mi_mayor": "",
+      "mi_indice": ""
+    },
+    "evaluaciones_detalladas": [
+      {
+        "nro_pista": 1,
+        "archivo": "isocronos/metronomo_isocrono120bpm.wav",
+        "mano_evaluada": "Derecha",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 2,
+        "archivo": "rampa/PR-10/PR-10__25-10-30.wav",
+        "mano_evaluada": "Derecha",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 3,
+        "archivo": "isocronos/metronomo_isocrono132bpm.wav",
+        "mano_evaluada": "Derecha",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 4,
+        "archivo": "isocronos/metronomo_isocrono160bpm.wav",
+        "mano_evaluada": "Derecha",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 5,
+        "archivo": "rampa/PR-33/PR-33__23-10-30.wav",
+        "mano_evaluada": "Derecha",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 6,
+        "archivo": "abruptos/PA-33/PA-33__23-40.wav",
+        "mano_evaluada": "Derecha",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 7,
+        "archivo": "abruptos/PA+33/PA+33__23-40.wav",
+        "mano_evaluada": "Derecha",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 8,
+        "archivo": "isocronos/metronomo_isocrono108bpm.wav",
+        "mano_evaluada": "Derecha",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 9,
+        "archivo": "isocronos/metronomo_isocrono80bpm.wav",
+        "mano_evaluada": "Derecha",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 10,
+        "archivo": "abruptos/PA+10/PA+10__20-40.wav",
+        "mano_evaluada": "Derecha",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 11,
+        "archivo": "rampa/PR+10/PR+10__25-10-30.wav",
+        "mano_evaluada": "Derecha",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 12,
+        "archivo": "abruptos/PA-10/PA-10__24-40.wav",
+        "mano_evaluada": "Derecha",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 13,
+        "archivo": "rampa/PR+33/PR+33__23-10-30.wav",
+        "mano_evaluada": "Derecha",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 14,
+        "archivo": "isocronos/metronomo_isocrono132bpm.wav",
+        "mano_evaluada": "Izquierda",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 15,
+        "archivo": "rampa/PR+33/PR+33__24-10-30.wav",
+        "mano_evaluada": "Izquierda",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 16,
+        "archivo": "isocronos/metronomo_isocrono80bpm.wav",
+        "mano_evaluada": "Izquierda",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 17,
+        "archivo": "abruptos/PA+10/PA+10__22-40.wav",
+        "mano_evaluada": "Izquierda",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 18,
+        "archivo": "isocronos/metronomo_isocrono108bpm.wav",
+        "mano_evaluada": "Izquierda",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 19,
+        "archivo": "abruptos/PA-10/PA-10__21-40.wav",
+        "mano_evaluada": "Izquierda",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 20,
+        "archivo": "isocronos/metronomo_isocrono120bpm.wav",
+        "mano_evaluada": "Izquierda",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 21,
+        "archivo": "abruptos/PA+33/PA+33__21-40.wav",
+        "mano_evaluada": "Izquierda",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 22,
+        "archivo": "rampa/PR+10/PR+10__23-10-30.wav",
+        "mano_evaluada": "Izquierda",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 23,
+        "archivo": "rampa/PR-10/PR-10__20-10-30.wav",
+        "mano_evaluada": "Izquierda",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 24,
+        "archivo": "isocronos/metronomo_isocrono160bpm.wav",
+        "mano_evaluada": "Izquierda",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 25,
+        "archivo": "abruptos/PA-33/PA-33__25-40.wav",
+        "mano_evaluada": "Izquierda",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 26,
+        "archivo": "rampa/PR-33/PR-33__25-10-30.wav",
+        "mano_evaluada": "Izquierda",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      }
+    ]
+  },
+  {
+    "fecha": "2026-02-21",
+    "nombre": "d",
+    "email": "",
+    "investigador": "",
+    "medicacion": "",
+    "psicopatologia": "",
+    "diagnostico": "d",
+    "dominancia": "Diestro",
+    "manoInicio": "Derecha",
+    "medidasManos": {
+      "md_mayor": "",
+      "md_indice": "",
+      "mi_mayor": "",
+      "mi_indice": ""
+    },
+    "evaluaciones_detalladas": [
+      {
+        "nro_pista": 1,
+        "archivo": "abruptos/PA-10/PA-10__25-40.wav",
+        "mano_evaluada": "Derecha",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 2,
+        "archivo": "abruptos/PA+10/PA+10__22-40.wav",
+        "mano_evaluada": "Derecha",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 3,
+        "archivo": "abruptos/PA+33/PA+33__20-40.wav",
+        "mano_evaluada": "Derecha",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 4,
+        "archivo": "abruptos/PA-33/PA-33__20-40.wav",
+        "mano_evaluada": "Derecha",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 5,
+        "archivo": "isocronos/metronomo_isocrono120bpm.wav",
+        "mano_evaluada": "Derecha",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 6,
+        "archivo": "rampa/PR+33/PR+33__24-10-30.wav",
+        "mano_evaluada": "Derecha",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 7,
+        "archivo": "isocronos/metronomo_isocrono108bpm.wav",
+        "mano_evaluada": "Derecha",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 8,
+        "archivo": "rampa/PR-33/PR-33__21-10-30.wav",
+        "mano_evaluada": "Derecha",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 9,
+        "archivo": "rampa/PR+10/PR+10__22-10-30.wav",
+        "mano_evaluada": "Derecha",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 10,
+        "archivo": "rampa/PR-10/PR-10__22-10-30.wav",
+        "mano_evaluada": "Derecha",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 11,
+        "archivo": "isocronos/metronomo_isocrono132bpm.wav",
+        "mano_evaluada": "Derecha",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 12,
+        "archivo": "isocronos/metronomo_isocrono160bpm.wav",
+        "mano_evaluada": "Derecha",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 13,
+        "archivo": "isocronos/metronomo_isocrono80bpm.wav",
+        "mano_evaluada": "Derecha",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 14,
+        "archivo": "rampa/PR-10/PR-10__21-10-30.wav",
+        "mano_evaluada": "Izquierda",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 15,
+        "archivo": "isocronos/metronomo_isocrono132bpm.wav",
+        "mano_evaluada": "Izquierda",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 16,
+        "archivo": "rampa/PR+33/PR+33__25-10-30.wav",
+        "mano_evaluada": "Izquierda",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 17,
+        "archivo": "rampa/PR-33/PR-33__21-10-30.wav",
+        "mano_evaluada": "Izquierda",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 18,
+        "archivo": "abruptos/PA+10/PA+10__21-40.wav",
+        "mano_evaluada": "Izquierda",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 19,
+        "archivo": "isocronos/metronomo_isocrono120bpm.wav",
+        "mano_evaluada": "Izquierda",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 20,
+        "archivo": "abruptos/PA-33/PA-33__21-40.wav",
+        "mano_evaluada": "Izquierda",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 21,
+        "archivo": "abruptos/PA-10/PA-10__25-40.wav",
+        "mano_evaluada": "Izquierda",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 22,
+        "archivo": "isocronos/metronomo_isocrono108bpm.wav",
+        "mano_evaluada": "Izquierda",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 23,
+        "archivo": "isocronos/metronomo_isocrono160bpm.wav",
+        "mano_evaluada": "Izquierda",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 24,
+        "archivo": "abruptos/PA+33/PA+33__24-40.wav",
+        "mano_evaluada": "Izquierda",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 25,
+        "archivo": "rampa/PR+10/PR+10__22-10-30.wav",
+        "mano_evaluada": "Izquierda",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 26,
+        "archivo": "isocronos/metronomo_isocrono80bpm.wav",
+        "mano_evaluada": "Izquierda",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      }
+    ]
+  },
+  {
+    "fecha": "2026-02-21",
+    "nombre": "a",
+    "email": "",
+    "investigador": "",
+    "medicacion": "",
+    "psicopatologia": "",
+    "diagnostico": "a",
+    "dominancia": "Zurdo",
+    "manoInicio": "Derecha",
+    "medidasManos": {
+      "md_mayor": "",
+      "md_indice": "",
+      "mi_mayor": "",
+      "mi_indice": ""
+    },
+    "evaluaciones_detalladas": [
+      {
+        "nro_pista": 1,
+        "archivo": "abruptos/PA-10/PA-10__20-40.wav",
+        "mano_evaluada": "Derecha",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 2,
+        "archivo": "isocronos/metronomo_isócrono80bpm.wav",
+        "mano_evaluada": "Derecha",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 3,
+        "archivo": "abruptos/PA-33/PA-33__21-40.wav",
+        "mano_evaluada": "Derecha",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 4,
+        "archivo": "rampa/PR-10/PR-10__20-10-30.wav",
+        "mano_evaluada": "Derecha",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 5,
+        "archivo": "isocronos/metronomo_isócrono132bpm.wav",
+        "mano_evaluada": "Derecha",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 6,
+        "archivo": "abruptos/PA+33/PA+33__20-40.wav",
+        "mano_evaluada": "Derecha",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 7,
+        "archivo": "rampa/PR+33/PR+33__20-10-30.wav",
+        "mano_evaluada": "Derecha",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 8,
+        "archivo": "isocronos/metronomo_isócrono120bpm.wav",
+        "mano_evaluada": "Derecha",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 9,
+        "archivo": "rampa/PR-33/PR-33__22-10-30.wav",
+        "mano_evaluada": "Derecha",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 10,
+        "archivo": "isocronos/metronomo_isócrono160bpm.wav",
+        "mano_evaluada": "Derecha",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 11,
+        "archivo": "isocronos/metronomo_isócrono108bpm.wav",
+        "mano_evaluada": "Derecha",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 12,
+        "archivo": "abruptos/PA+10/PA+10__22-40.wav",
+        "mano_evaluada": "Derecha",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 13,
+        "archivo": "rampa/PR+10/PR+10__20-10-30.wav",
+        "mano_evaluada": "Derecha",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 14,
+        "archivo": "rampa/PR-33/PR-33__25-10-30.wav",
+        "mano_evaluada": "Izquierda",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 15,
+        "archivo": "isocronos/metronomo_isócrono120bpm.wav",
+        "mano_evaluada": "Izquierda",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 16,
+        "archivo": "abruptos/PA+33/PA+33__24-40.wav",
+        "mano_evaluada": "Izquierda",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 17,
+        "archivo": "abruptos/PA-10/PA-10__24-40.wav",
+        "mano_evaluada": "Izquierda",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 18,
+        "archivo": "rampa/PR-10/PR-10__21-10-30.wav",
+        "mano_evaluada": "Izquierda",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 19,
+        "archivo": "abruptos/PA-33/PA-33__22-40.wav",
+        "mano_evaluada": "Izquierda",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 20,
+        "archivo": "rampa/PR+33/PR+33__22-10-30.wav",
+        "mano_evaluada": "Izquierda",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 21,
+        "archivo": "isocronos/metronomo_isócrono108bpm.wav",
+        "mano_evaluada": "Izquierda",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 22,
+        "archivo": "abruptos/PA+10/PA+10__21-40.wav",
+        "mano_evaluada": "Izquierda",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 23,
+        "archivo": "isocronos/metronomo_isócrono160bpm.wav",
+        "mano_evaluada": "Izquierda",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 24,
+        "archivo": "isocronos/metronomo_isócrono132bpm.wav",
+        "mano_evaluada": "Izquierda",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 25,
+        "archivo": "rampa/PR+10/PR+10__23-10-30.wav",
+        "mano_evaluada": "Izquierda",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 26,
+        "archivo": "isocronos/metronomo_isócrono80bpm.wav",
+        "mano_evaluada": "Izquierda",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      }
+    ]
+  },
+  {
+    "fecha": "2026-02-21",
+    "nombre": "a",
+    "email": "",
+    "investigador": "",
+    "medicacion": "",
+    "psicopatologia": "",
+    "diagnostico": "a",
+    "dominancia": "Ambidiestro",
+    "manoInicio": "Derecha",
+    "medidasManos": {
+      "md_mayor": "",
+      "md_indice": "",
+      "mi_mayor": "",
+      "mi_indice": ""
+    },
+    "evaluaciones_detalladas": [
+      {
+        "nro_pista": 1,
+        "archivo": "abruptos/PA-10/PA-10__23-40.wav",
+        "mano_evaluada": "Derecha",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 2,
+        "archivo": "rampa/PR-33/PR-33__24-10-30.wav",
+        "mano_evaluada": "Derecha",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 3,
+        "archivo": "rampa/PR-10/PR-10__21-10-30.wav",
+        "mano_evaluada": "Derecha",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 4,
+        "archivo": "rampa/PR+33/PR+33__25-10-30.wav",
+        "mano_evaluada": "Derecha",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 5,
+        "archivo": "isocronos/metronomo_isócrono80bpm.wav",
+        "mano_evaluada": "Derecha",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 6,
+        "archivo": "abruptos/PA+33/PA+33__22-40.wav",
+        "mano_evaluada": "Derecha",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 7,
+        "archivo": "abruptos/PA-33/PA-33__23-40.wav",
+        "mano_evaluada": "Derecha",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 8,
+        "archivo": "isocronos/metronomo_isócrono108bpm.wav",
+        "mano_evaluada": "Derecha",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 9,
+        "archivo": "isocronos/metronomo_isócrono120bpm.wav",
+        "mano_evaluada": "Derecha",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 10,
+        "archivo": "abruptos/PA+10/PA+10__20-40.wav",
+        "mano_evaluada": "Derecha",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 11,
+        "archivo": "rampa/PR+10/PR+10__23-10-30.wav",
+        "mano_evaluada": "Derecha",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 12,
+        "archivo": "isocronos/metronomo_isócrono132bpm.wav",
+        "mano_evaluada": "Derecha",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 13,
+        "archivo": "isocronos/metronomo_isócrono160bpm.wav",
+        "mano_evaluada": "Derecha",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 14,
+        "archivo": "abruptos/PA+33/PA+33__23-40.wav",
+        "mano_evaluada": "Izquierda",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 15,
+        "archivo": "abruptos/PA-10/PA-10__21-40.wav",
+        "mano_evaluada": "Izquierda",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 16,
+        "archivo": "isocronos/metronomo_isócrono80bpm.wav",
+        "mano_evaluada": "Izquierda",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 17,
+        "archivo": "isocronos/metronomo_isócrono108bpm.wav",
+        "mano_evaluada": "Izquierda",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 18,
+        "archivo": "rampa/PR+10/PR+10__20-10-30.wav",
+        "mano_evaluada": "Izquierda",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 19,
+        "archivo": "abruptos/PA+10/PA+10__22-40.wav",
+        "mano_evaluada": "Izquierda",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 20,
+        "archivo": "isocronos/metronomo_isócrono160bpm.wav",
+        "mano_evaluada": "Izquierda",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 21,
+        "archivo": "isocronos/metronomo_isócrono120bpm.wav",
+        "mano_evaluada": "Izquierda",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 22,
+        "archivo": "abruptos/PA-33/PA-33__22-40.wav",
+        "mano_evaluada": "Izquierda",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 23,
+        "archivo": "rampa/PR-10/PR-10__21-10-30.wav",
+        "mano_evaluada": "Izquierda",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 24,
+        "archivo": "rampa/PR+33/PR+33__23-10-30.wav",
+        "mano_evaluada": "Izquierda",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 25,
+        "archivo": "isocronos/metronomo_isócrono132bpm.wav",
+        "mano_evaluada": "Izquierda",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 26,
+        "archivo": "rampa/PR-33/PR-33__21-10-30.wav",
+        "mano_evaluada": "Izquierda",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      }
+    ]
+  },
+  {
+    "fecha": "2026-02-21",
+    "nombre": "s",
+    "email": "",
+    "investigador": "",
+    "medicacion": "",
+    "psicopatologia": "",
+    "diagnostico": "s",
+    "dominancia": "Zurdo",
+    "manoInicio": "Derecha",
+    "medidasManos": {
+      "md_mayor": "",
+      "md_indice": "",
+      "mi_mayor": "",
+      "mi_indice": ""
+    },
+    "evaluaciones_detalladas": [
+      {
+        "nro_pista": 1,
+        "archivo": "rampa/PR+10/PR+10__25-10-30.wav",
+        "mano_evaluada": "Derecha",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 2,
+        "archivo": "isocronos/metronomo_isócrono132bpm.wav",
+        "mano_evaluada": "Derecha",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 3,
+        "archivo": "rampa/PR-10/PR-10__25-10-30.wav",
+        "mano_evaluada": "Derecha",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 4,
+        "archivo": "isocronos/metronomo_isócrono120bpm.wav",
+        "mano_evaluada": "Derecha",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 5,
+        "archivo": "isocronos/metronomo_isócrono108bpm.wav",
+        "mano_evaluada": "Derecha",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 6,
+        "archivo": "abruptos/PA+33/PA+33__20-40.wav",
+        "mano_evaluada": "Derecha",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 7,
+        "archivo": "rampa/PR-33/PR-33__22-10-30.wav",
+        "mano_evaluada": "Derecha",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 8,
+        "archivo": "isocronos/metronomo_isócrono160bpm.wav",
+        "mano_evaluada": "Derecha",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 9,
+        "archivo": "abruptos/PA-10/PA-10__21-40.wav",
+        "mano_evaluada": "Derecha",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 10,
+        "archivo": "isocronos/metronomo_isócrono80bpm.wav",
+        "mano_evaluada": "Derecha",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 11,
+        "archivo": "abruptos/PA-33/PA-33__22-40.wav",
+        "mano_evaluada": "Derecha",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 12,
+        "archivo": "abruptos/PA+10/PA+10__25-40.wav",
+        "mano_evaluada": "Derecha",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 13,
+        "archivo": "rampa/PR+33/PR+33__23-10-30.wav",
+        "mano_evaluada": "Derecha",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 14,
+        "archivo": "isocronos/metronomo_isócrono160bpm.wav",
+        "mano_evaluada": "Izquierda",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 15,
+        "archivo": "rampa/PR+10/PR+10__24-10-30.wav",
+        "mano_evaluada": "Izquierda",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 16,
+        "archivo": "rampa/PR-10/PR-10__24-10-30.wav",
+        "mano_evaluada": "Izquierda",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 17,
+        "archivo": "abruptos/PA+10/PA+10__21-40.wav",
+        "mano_evaluada": "Izquierda",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 18,
+        "archivo": "rampa/PR+33/PR+33__23-10-30.wav",
+        "mano_evaluada": "Izquierda",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 19,
+        "archivo": "isocronos/metronomo_isócrono80bpm.wav",
+        "mano_evaluada": "Izquierda",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 20,
+        "archivo": "isocronos/metronomo_isócrono108bpm.wav",
+        "mano_evaluada": "Izquierda",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 21,
+        "archivo": "isocronos/metronomo_isócrono120bpm.wav",
+        "mano_evaluada": "Izquierda",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 22,
+        "archivo": "isocronos/metronomo_isócrono132bpm.wav",
+        "mano_evaluada": "Izquierda",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 23,
+        "archivo": "rampa/PR-33/PR-33__25-10-30.wav",
+        "mano_evaluada": "Izquierda",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 24,
+        "archivo": "abruptos/PA-10/PA-10__24-40.wav",
+        "mano_evaluada": "Izquierda",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 25,
+        "archivo": "abruptos/PA-33/PA-33__21-40.wav",
+        "mano_evaluada": "Izquierda",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 26,
+        "archivo": "abruptos/PA+33/PA+33__23-40.wav",
+        "mano_evaluada": "Izquierda",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      }
+    ]
+  },
+  {
+    "fecha": "2026-02-25T00:44:50.913Z",
+    "nombre": "d",
+    "email": "d",
+    "investigador": "",
+    "medicacion": "",
+    "psicopatologia": "d",
+    "diagnostico": "d",
+    "dominancia": "Diestro",
+    "manoInicio": "Derecha",
+    "medidasManos": {
+      "md_mayor": "11",
+      "md_indice": "1",
+      "mi_mayor": "1",
+      "mi_indice": "1"
+    },
+    "evaluaciones_detalladas": []
+  },
+  {
+    "fecha": "2026-02-25T00:46:18.139Z",
+    "nombre": "a",
+    "email": "",
+    "investigador": "",
+    "medicacion": "",
+    "psicopatologia": "a",
+    "diagnostico": "a",
+    "dominancia": "Zurdo",
+    "manoInicio": "Derecha",
+    "medidasManos": {
+      "md_mayor": "11",
+      "md_indice": "1",
+      "mi_mayor": "1",
+      "mi_indice": "1"
+    },
+    "evaluaciones_detalladas": [
+      {
+        "nro_pista": 1,
+        "archivo": "isocronos/metronomo_isócrono80bpm.wav",
+        "mano_evaluada": "Derecha",
+        "rhythm_identification": "Consistente",
+        "tempo_variations": "Consistente",
+        "rhythmic_accuracy": "Inconsistente"
+      },
+      {
+        "nro_pista": 2,
+        "archivo": "rampa/PR-33/PR-33__22-10-30.wav",
+        "mano_evaluada": "Derecha",
+        "rhythm_identification": "Inconsistente",
+        "tempo_variations": "Consistente",
+        "rhythmic_accuracy": "Rara vez"
+      },
+      {
+        "nro_pista": 3,
+        "archivo": "abruptos/PA-33/PA-33__20-40.wav",
+        "mano_evaluada": "Derecha",
+        "rhythm_identification": "Consistente",
+        "tempo_variations": "Consistente",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 4,
+        "archivo": "abruptos/PA-10/PA-10__21-40.wav",
+        "mano_evaluada": "Derecha",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 5,
+        "archivo": "rampa/PR+10/PR+10__25-10-30.wav",
+        "mano_evaluada": "Derecha",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 6,
+        "archivo": "abruptos/PA+10/PA+10__21-40.wav",
+        "mano_evaluada": "Derecha",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 7,
+        "archivo": "rampa/PR-10/PR-10__24-10-30.wav",
+        "mano_evaluada": "Derecha",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 8,
+        "archivo": "isocronos/metronomo_isócrono108bpm.wav",
+        "mano_evaluada": "Derecha",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 9,
+        "archivo": "rampa/PR+33/PR+33__24-10-30.wav",
+        "mano_evaluada": "Derecha",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 10,
+        "archivo": "isocronos/metronomo_isócrono120bpm.wav",
+        "mano_evaluada": "Derecha",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 11,
+        "archivo": "abruptos/PA+33/PA+33__24-40.wav",
+        "mano_evaluada": "Derecha",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 12,
+        "archivo": "isocronos/metronomo_isócrono132bpm.wav",
+        "mano_evaluada": "Derecha",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 13,
+        "archivo": "isocronos/metronomo_isócrono160bpm.wav",
+        "mano_evaluada": "Derecha",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 14,
+        "archivo": "rampa/PR-10/PR-10__24-10-30.wav",
+        "mano_evaluada": "Izquierda",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 15,
+        "archivo": "abruptos/PA-10/PA-10__23-40.wav",
+        "mano_evaluada": "Izquierda",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 16,
+        "archivo": "isocronos/metronomo_isócrono120bpm.wav",
+        "mano_evaluada": "Izquierda",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 17,
+        "archivo": "abruptos/PA+33/PA+33__25-40.wav",
+        "mano_evaluada": "Izquierda",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 18,
+        "archivo": "rampa/PR-33/PR-33__20-10-30.wav",
+        "mano_evaluada": "Izquierda",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 19,
+        "archivo": "rampa/PR+33/PR+33__21-10-30.wav",
+        "mano_evaluada": "Izquierda",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 20,
+        "archivo": "isocronos/metronomo_isócrono160bpm.wav",
+        "mano_evaluada": "Izquierda",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 21,
+        "archivo": "abruptos/PA+10/PA+10__20-40.wav",
+        "mano_evaluada": "Izquierda",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 22,
+        "archivo": "isocronos/metronomo_isócrono132bpm.wav",
+        "mano_evaluada": "Izquierda",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 23,
+        "archivo": "abruptos/PA-33/PA-33__24-40.wav",
+        "mano_evaluada": "Izquierda",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 24,
+        "archivo": "isocronos/metronomo_isócrono108bpm.wav",
+        "mano_evaluada": "Izquierda",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 25,
+        "archivo": "rampa/PR+10/PR+10__25-10-30.wav",
+        "mano_evaluada": "Izquierda",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 26,
+        "archivo": "isocronos/metronomo_isócrono80bpm.wav",
+        "mano_evaluada": "Izquierda",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      }
+    ],
+    "consentFileUrl": "/consentimientos/paciente_7/consentimiento_firmado.pdf",
+    "consentFileName": "consentimiento.pdf",
+    "consentUploadedAt": "2026-05-24T23:46:43.763Z"
+  },
+  {
+    "fecha": "2026-02-24",
+    "nombre": "Carolina Blanco",
+    "email": "caroblancocorrecher",
+    "investigador": "Caro",
+    "medicacion": "",
+    "psicopatologia": "no",
+    "diagnostico": "s",
+    "dominancia": "Diestro",
+    "manoInicio": "Derecha",
+    "medidasManos": {
+      "md_mayor": "1",
+      "md_indice": "1",
+      "mi_mayor": "11",
+      "mi_indice": "1"
+    },
+    "evaluaciones_detalladas": []
+  },
+  {
+    "fecha": "2026-02-24",
+    "nombre": "d",
+    "email": "",
+    "investigador": "",
+    "medicacion": "",
+    "psicopatologia": "",
+    "diagnostico": "d",
+    "dominancia": "Ambidiestro",
+    "manoInicio": "Derecha",
+    "medidasManos": {
+      "md_mayor": "",
+      "md_indice": "",
+      "mi_mayor": "",
+      "mi_indice": ""
+    },
+    "evaluaciones_detalladas": [
+      {
+        "nro_pista": 1,
+        "archivo": "isocronos/metronomo_isócrono108bpm.wav",
+        "mano_evaluada": "Derecha",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 2,
+        "archivo": "abruptos/PA-10/PA-10__20-40.wav",
+        "mano_evaluada": "Derecha",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 3,
+        "archivo": "isocronos/metronomo_isócrono132bpm.wav",
+        "mano_evaluada": "Derecha",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 4,
+        "archivo": "rampa/PR-10/PR-10__23-10-30.wav",
+        "mano_evaluada": "Derecha",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 5,
+        "archivo": "isocronos/metronomo_isócrono80bpm.wav",
+        "mano_evaluada": "Derecha",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 6,
+        "archivo": "isocronos/metronomo_isócrono160bpm.wav",
+        "mano_evaluada": "Derecha",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 7,
+        "archivo": "isocronos/metronomo_isócrono120bpm.wav",
+        "mano_evaluada": "Derecha",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 8,
+        "archivo": "abruptos/PA+33/PA+33__21-40.wav",
+        "mano_evaluada": "Derecha",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 9,
+        "archivo": "rampa/PR+10/PR+10__21-10-30.wav",
+        "mano_evaluada": "Derecha",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 10,
+        "archivo": "abruptos/PA+10/PA+10__20-40.wav",
+        "mano_evaluada": "Derecha",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 11,
+        "archivo": "rampa/PR+33/PR+33__21-10-30.wav",
+        "mano_evaluada": "Derecha",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 12,
+        "archivo": "abruptos/PA-33/PA-33__25-40.wav",
+        "mano_evaluada": "Derecha",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 13,
+        "archivo": "rampa/PR-33/PR-33__22-10-30.wav",
+        "mano_evaluada": "Derecha",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 14,
+        "archivo": "isocronos/metronomo_isócrono108bpm.wav",
+        "mano_evaluada": "Izquierda",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 15,
+        "archivo": "isocronos/metronomo_isócrono80bpm.wav",
+        "mano_evaluada": "Izquierda",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 16,
+        "archivo": "isocronos/metronomo_isócrono120bpm.wav",
+        "mano_evaluada": "Izquierda",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 17,
+        "archivo": "isocronos/metronomo_isócrono132bpm.wav",
+        "mano_evaluada": "Izquierda",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 18,
+        "archivo": "rampa/PR-10/PR-10__21-10-30.wav",
+        "mano_evaluada": "Izquierda",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 19,
+        "archivo": "rampa/PR+10/PR+10__25-10-30.wav",
+        "mano_evaluada": "Izquierda",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 20,
+        "archivo": "rampa/PR-33/PR-33__24-10-30.wav",
+        "mano_evaluada": "Izquierda",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 21,
+        "archivo": "abruptos/PA-33/PA-33__20-40.wav",
+        "mano_evaluada": "Izquierda",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 22,
+        "archivo": "abruptos/PA-10/PA-10__23-40.wav",
+        "mano_evaluada": "Izquierda",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 23,
+        "archivo": "rampa/PR+33/PR+33__21-10-30.wav",
+        "mano_evaluada": "Izquierda",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 24,
+        "archivo": "isocronos/metronomo_isócrono160bpm.wav",
+        "mano_evaluada": "Izquierda",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 25,
+        "archivo": "abruptos/PA+33/PA+33__25-40.wav",
+        "mano_evaluada": "Izquierda",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 26,
+        "archivo": "abruptos/PA+10/PA+10__20-40.wav",
+        "mano_evaluada": "Izquierda",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      }
+    ],
+    "consentFileUrl": "/consentimientos/paciente_9/consentimiento_firmado.pdf",
+    "consentFileName": "Analisis_d_P1 (8).pdf",
+    "consentUploadedAt": "2026-05-27T00:10:27.446Z"
+  },
+  {
+    "fecha": "2026-04-07",
+    "nombre": "ww",
+    "email": "",
+    "investigador": "",
+    "medicacion": "",
+    "psicopatologia": "",
+    "diagnostico": "ww",
+    "dominancia": "Diestro",
+    "manoInicio": "Derecha",
+    "medidasManos": {
+      "md_mayor": "",
+      "md_indice": "",
+      "mi_mayor": "",
+      "mi_indice": ""
+    },
+    "evaluaciones_detalladas": []
+  },
+  {
+    "fecha": "2026-04-06",
+    "nombre": "dd",
+    "email": "",
+    "investigador": "",
+    "medicacion": "",
+    "psicopatologia": "",
+    "diagnostico": "dd",
+    "dominancia": "Diestro",
+    "manoInicio": "Derecha",
+    "medidasManos": {
+      "md_mayor": "",
+      "md_indice": "",
+      "mi_mayor": "",
+      "mi_indice": ""
+    },
+    "evaluaciones_detalladas": [
+      {
+        "nro_pista": 1,
+        "archivo": "abruptos/PA-10/PA-10__25-40.wav",
+        "mano_evaluada": "Derecha",
+        "rhythm_identification": "Inconsistente",
+        "tempo_variations": "Consistente",
+        "rhythmic_accuracy": "Rara vez"
+      },
+      {
+        "nro_pista": 2,
+        "archivo": "isocronos/metronomo_isócrono80bpm.wav",
+        "mano_evaluada": "Derecha",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 3,
+        "archivo": "isocronos/metronomo_isócrono108bpm.wav",
+        "mano_evaluada": "Derecha",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 4,
+        "archivo": "rampa/PR-10/PR-10__25-10-30.wav",
+        "mano_evaluada": "Derecha",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 5,
+        "archivo": "abruptos/PA+33/PA+33__23-40.wav",
+        "mano_evaluada": "Derecha",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 6,
+        "archivo": "isocronos/metronomo_isócrono120bpm.wav",
+        "mano_evaluada": "Derecha",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 7,
+        "archivo": "isocronos/metronomo_isócrono132bpm.wav",
+        "mano_evaluada": "Derecha",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 8,
+        "archivo": "isocronos/metronomo_isócrono160bpm.wav",
+        "mano_evaluada": "Derecha",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 9,
+        "archivo": "abruptos/PA-33/PA-33__20-40.wav",
+        "mano_evaluada": "Derecha",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 10,
+        "archivo": "rampa/PR-33/PR-33__25-10-30.wav",
+        "mano_evaluada": "Derecha",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 11,
+        "archivo": "abruptos/PA+10/PA+10__21-40.wav",
+        "mano_evaluada": "Derecha",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 12,
+        "archivo": "rampa/PR+33/PR+33__24-10-30.wav",
+        "mano_evaluada": "Derecha",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 13,
+        "archivo": "rampa/PR+10/PR+10__20-10-30.wav",
+        "mano_evaluada": "Derecha",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 14,
+        "archivo": "isocronos/metronomo_isócrono132bpm.wav",
+        "mano_evaluada": "Izquierda",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 15,
+        "archivo": "isocronos/metronomo_isócrono80bpm.wav",
+        "mano_evaluada": "Izquierda",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 16,
+        "archivo": "rampa/PR-10/PR-10__22-10-30.wav",
+        "mano_evaluada": "Izquierda",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 17,
+        "archivo": "rampa/PR-33/PR-33__21-10-30.wav",
+        "mano_evaluada": "Izquierda",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 18,
+        "archivo": "rampa/PR+33/PR+33__21-10-30.wav",
+        "mano_evaluada": "Izquierda",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 19,
+        "archivo": "abruptos/PA-33/PA-33__20-40.wav",
+        "mano_evaluada": "Izquierda",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 20,
+        "archivo": "isocronos/metronomo_isócrono108bpm.wav",
+        "mano_evaluada": "Izquierda",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 21,
+        "archivo": "rampa/PR+10/PR+10__21-10-30.wav",
+        "mano_evaluada": "Izquierda",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 22,
+        "archivo": "abruptos/PA-10/PA-10__23-40.wav",
+        "mano_evaluada": "Izquierda",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 23,
+        "archivo": "isocronos/metronomo_isócrono120bpm.wav",
+        "mano_evaluada": "Izquierda",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 24,
+        "archivo": "abruptos/PA+33/PA+33__25-40.wav",
+        "mano_evaluada": "Izquierda",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 25,
+        "archivo": "isocronos/metronomo_isócrono160bpm.wav",
+        "mano_evaluada": "Izquierda",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 26,
+        "archivo": "abruptos/PA+10/PA+10__25-40.wav",
+        "mano_evaluada": "Izquierda",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      }
+    ]
+  },
+  {
+    "fecha": "2026-04-20",
+    "nombre": "ca",
+    "email": "",
+    "investigador": "",
+    "medicacion": "",
+    "psicopatologia": "",
+    "diagnostico": "d",
+    "dominancia": "Diestro",
+    "manoInicio": "Derecha",
+    "medidasManos": {
+      "md_mayor": "",
+      "md_indice": "",
+      "mi_mayor": "",
+      "mi_indice": ""
+    },
+    "evaluaciones_detalladas": [
+      {
+        "nro_pista": 1,
+        "archivo": "rampa/PR+10/PR+10__24-10-30.wav",
+        "mano_evaluada": "Derecha",
+        "rhythm_identification": "Inconsistente",
+        "tempo_variations": "Rara vez",
+        "rhythmic_accuracy": "Consistente"
+      },
+      {
+        "nro_pista": 2,
+        "archivo": "isocronos/metronomo_isocrono120bpm.wav",
+        "mano_evaluada": "Derecha",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 3,
+        "archivo": "isocronos/metronomo_isocrono80bpm.wav",
+        "mano_evaluada": "Derecha",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 4,
+        "archivo": "isocronos/metronomo_isocrono160bpm.wav",
+        "mano_evaluada": "Derecha",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 5,
+        "archivo": "isocronos/metronomo_isocrono132bpm.wav",
+        "mano_evaluada": "Derecha",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 6,
+        "archivo": "rampa/PR+33/PR+33__24-10-30.wav",
+        "mano_evaluada": "Derecha",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 7,
+        "archivo": "abruptos/PA+33/PA+33__22-40.wav",
+        "mano_evaluada": "Derecha",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 8,
+        "archivo": "abruptos/PA-10/PA-10__20-40.wav",
+        "mano_evaluada": "Derecha",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 9,
+        "archivo": "abruptos/PA-33/PA-33__23-40.wav",
+        "mano_evaluada": "Derecha",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 10,
+        "archivo": "abruptos/PA+10/PA+10__20-40.wav",
+        "mano_evaluada": "Derecha",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 11,
+        "archivo": "isocronos/metronomo_isocrono108bpm.wav",
+        "mano_evaluada": "Derecha",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 12,
+        "archivo": "rampa/PR-33/PR-33__20-10-30.wav",
+        "mano_evaluada": "Derecha",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 13,
+        "archivo": "rampa/PR-10/PR-10__24-10-30.wav",
+        "mano_evaluada": "Derecha",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 14,
+        "archivo": "rampa/PR-33/PR-33__24-10-30.wav",
+        "mano_evaluada": "Izquierda",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 15,
+        "archivo": "abruptos/PA+33/PA+33__25-40.wav",
+        "mano_evaluada": "Izquierda",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 16,
+        "archivo": "rampa/PR+33/PR+33__25-10-30.wav",
+        "mano_evaluada": "Izquierda",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 17,
+        "archivo": "rampa/PR+10/PR+10__22-10-30.wav",
+        "mano_evaluada": "Izquierda",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 18,
+        "archivo": "isocronos/metronomo_isocrono160bpm.wav",
+        "mano_evaluada": "Izquierda",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 19,
+        "archivo": "isocronos/metronomo_isocrono80bpm.wav",
+        "mano_evaluada": "Izquierda",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 20,
+        "archivo": "abruptos/PA-10/PA-10__21-40.wav",
+        "mano_evaluada": "Izquierda",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 21,
+        "archivo": "abruptos/PA-33/PA-33__22-40.wav",
+        "mano_evaluada": "Izquierda",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      }
+    ]
+  },
+  {
+    "fecha": "2026-04-20",
+    "nombre": "d",
+    "email": "",
+    "investigador": "",
+    "medicacion": "",
+    "psicopatologia": "",
+    "diagnostico": "dd",
+    "dominancia": "Zurdo",
+    "manoInicio": "Derecha",
+    "medidasManos": {
+      "md_mayor": "",
+      "md_indice": "",
+      "mi_mayor": "",
+      "mi_indice": ""
+    },
+    "evaluaciones_detalladas": [
+      {
+        "nro_pista": 1,
+        "archivo": "isocronos/metronomo_isocrono108bpm.wav",
+        "mano_evaluada": "Derecha",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 2,
+        "archivo": "abruptos/PA-10/PA-10__24-40.wav",
+        "mano_evaluada": "Derecha",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 3,
+        "archivo": "isocronos/metronomo_isocrono120bpm.wav",
+        "mano_evaluada": "Derecha",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 4,
+        "archivo": "isocronos/metronomo_isocrono80bpm.wav",
+        "mano_evaluada": "Derecha",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      }
+    ],
+    "consentFileUrl": "/consentimientos/paciente_13/consentimiento_firmado.pdf",
+    "consentFileName": "consentimiento.pdf",
+    "consentUploadedAt": "2026-05-24T23:49:33.932Z"
+  },
+  {
+    "fecha": "2026-04-23",
+    "nombre": "Czfo",
+    "email": "",
+    "investigador": "",
+    "medicacion": "",
+    "psicopatologia": "",
+    "diagnostico": "dd",
+    "dominancia": "",
+    "manoInicio": "",
+    "medidasManos": {},
+    "evaluaciones_detalladas": [],
+    "tipo_registro": "nino",
+    "tipo_evaluacion": "bnpm_nino",
+    "fecha_nacimiento": "2026-02-02",
+    "edad": "0",
+    "derivacion": "dd",
+    "observaciones_iniciales": "ccc",
+    "bnpm": {
+      "moduloA": null,
+      "moduloB": null,
+      "compartir_familia": {
+        "estado": "placeholder"
+      },
+      "moduloARequest": {
+        "moduleType": "BNPM_MODULO_A",
+        "token": "6dc8fd51e1eb879f54c0dc22c8983aa1a14ce68c675d6ceb",
+        "status": "pendiente",
+        "createdAt": "2026-04-30T01:37:40.256Z",
+        "submittedAt": null,
+        "completedAt": null,
+        "invalidatedAt": null,
+        "publicUrl": "http://localhost:3000/familia/modulo-a/6dc8fd51e1eb879f54c0dc22c8983aa1a14ce68c675d6ceb"
+      }
+    }
+  },
+  {
+    "fecha": "2026-04-25",
+    "nombre": "Carolina",
+    "email": "",
+    "investigador": "",
+    "medicacion": "",
+    "psicopatologia": "",
+    "diagnostico": "",
+    "dominancia": "",
+    "manoInicio": "",
+    "medidasManos": {},
+    "evaluaciones_detalladas": [],
+    "tipo_registro": "nino",
+    "tipo_evaluacion": "bnpm_nino",
+    "fecha_nacimiento": "",
+    "edad": "4",
+    "derivacion": "",
+    "observaciones_iniciales": "",
+    "bnpm": {
+      "moduloA": {
+        "savedAt": "2026-04-25T18:43:13.152Z",
+        "source": "familia",
+        "submittedAt": "2026-04-25T18:43:13.152Z",
+        "respondentName": "Sonia",
+        "respondentRelation": "Madre",
+        "values": {
+          "child_name": "Carolina",
+          "child_birth_date": "",
+          "child_age": "4",
+          "respondent_name": "Sonia",
+          "respondent_relation": "Madre",
+          "form_date": "",
+          "referral_source": "k",
+          "consultation_reason": "",
+          "home_sound_environment": "Silencio moderado",
+          "school_sound_environment": "",
+          "silence_behavior": [
+            "Se inquieta"
+          ],
+          "silence_behavior_other": "",
+          "vocalizes_in_silence": "No",
+          "vocalizes_in_silence_notes": "",
+          "self_stimulation_sound": [
+            "Mueve objetos que suenan"
+          ],
+          "self_stimulation_other": "",
+          "music_seek_frequency": "",
+          "first_response_music": [],
+          "first_response_music_other": "",
+          "attentive_listening": "",
+          "attentive_listening_examples": "",
+          "recognizes_songs": "",
+          "liked_music_types": [
+            "Melodias suaves"
+          ],
+          "liked_music_other": "",
+          "favorite_songs": "",
+          "disliked_music_types": "",
+          "rejection_expression": [
+            "Se irrita"
+          ],
+          "rejection_expression_other": "",
+          "sens_loud_sounds": "4",
+          "sens_soft_sounds": "2",
+          "sens_loud_voices": "1",
+          "sens_instruments": "5",
+          "preferred_timbres": [
+            "Percusion fuerte"
+          ],
+          "preferred_timbres_other": "",
+          "avoided_timbres": "",
+          "moves_with_music": "",
+          "movement_behaviors": [],
+          "movement_behaviors_other": "",
+          "rhythm_pulse_stable": "",
+          "rhythm_sync_steps": "",
+          "rhythm_reproduce_patterns": "",
+          "hits_instruments_hard": "A veces",
+          "seeks_vibrations": "",
+          "seeks_vibrations_details": "",
+          "avoids_textures": "",
+          "avoids_textures_details": "",
+          "seeks_material_temperature": "",
+          "seeks_material_temperature_details": "",
+          "calming_music": "",
+          "activating_music": "",
+          "rejecting_sounds": "",
+          "emotional_reactions": [],
+          "emotional_reactions_other": "",
+          "vocalizes_with_music": "",
+          "vocalizes_more_in_silence": "",
+          "imitates_melodies": "",
+          "uses_music_to_communicate": "",
+          "uses_music_to_communicate_examples": "",
+          "family_additional_notes": "",
+          "module_a_regulacion_0": "",
+          "module_a_regulacion_1": "",
+          "module_a_regulacion_2": "",
+          "module_a_regulacion_3": "",
+          "module_a_regulacion_4": "",
+          "module_a_regulacion_5": "",
+          "module_a_regulacion_6": "",
+          "module_a_temporal_0": "",
+          "module_a_temporal_1": "",
+          "module_a_temporal_2": "",
+          "module_a_temporal_3": "",
+          "module_a_temporal_4": "",
+          "module_a_temporal_5": "",
+          "module_a_audio_motor_0": "",
+          "module_a_audio_motor_1": "",
+          "module_a_audio_motor_2": "",
+          "module_a_audio_motor_3": "",
+          "module_a_audio_motor_4": "",
+          "module_a_comunicacion_0": "2",
+          "module_a_comunicacion_1": "0",
+          "module_a_comunicacion_2": "",
+          "module_a_comunicacion_3": "2",
+          "module_a_comunicacion_4": "",
+          "module_a_comunicacion_5": "2",
+          "module_a_ejecutivas_0": "1",
+          "module_a_ejecutivas_1": "0",
+          "module_a_ejecutivas_2": "1",
+          "module_a_ejecutivas_3": "",
+          "module_a_ejecutivas_4": "",
+          "module_a_ejecutivas_5": "2"
+        }
+      },
+      "moduloB": null,
+      "compartir_familia": {
+        "estado": "placeholder"
+      },
+      "moduloARequest": {
+        "moduleType": "BNPM_MODULO_A",
+        "token": "7c014e96ce8d2a3dc2721bd2304bb5394ecafbedc087e2de",
+        "status": "completado",
+        "createdAt": "2026-04-25T18:30:38.480Z",
+        "submittedAt": "2026-04-25T18:43:13.152Z",
+        "completedAt": "2026-04-25T18:43:13.152Z",
+        "invalidatedAt": null,
+        "publicUrl": "http://localhost:3000/familia/modulo-a/7c014e96ce8d2a3dc2721bd2304bb5394ecafbedc087e2de",
+        "respondentName": "Sonia",
+        "respondentRelation": "Madre"
+      }
+    }
+  },
+  {
+    "fecha": "2026-04-25",
+    "nombre": "Juan",
+    "email": "",
+    "investigador": "",
+    "medicacion": "",
+    "psicopatologia": "",
+    "diagnostico": "",
+    "dominancia": "",
+    "manoInicio": "",
+    "medidasManos": {},
+    "evaluaciones_detalladas": [],
+    "tipo_registro": "nino",
+    "tipo_evaluacion": "bnpm_nino",
+    "fecha_nacimiento": "",
+    "edad": "4",
+    "derivacion": "",
+    "observaciones_iniciales": "",
+    "bnpm": {
+      "moduloA": {
+        "savedAt": "2026-04-25T19:13:53.323Z",
+        "source": "familia",
+        "submittedAt": "2026-04-25T19:13:53.323Z",
+        "respondentName": "Ruben",
+        "respondentRelation": "Padre",
+        "values": {
+          "child_name": "Juan",
+          "child_birth_date": "",
+          "child_age": "4",
+          "respondent_name": "Ruben",
+          "respondent_relation": "Padre",
+          "form_date": "2026-04-25",
+          "referral_source": "",
+          "consultation_reason": "",
+          "home_sound_environment": "Silencio moderado",
+          "school_sound_environment": "Silencio moderado",
+          "silence_behavior": [
+            "Se inquieta"
+          ],
+          "silence_behavior_other": "",
+          "vocalizes_in_silence": "Si",
+          "vocalizes_in_silence_notes": "",
+          "self_stimulation_sound": [
+            "Juguetea con el timbre de su voz"
+          ],
+          "self_stimulation_other": "",
+          "music_seek_frequency": "Frecuentemente",
+          "first_response_music": [
+            "Se mueve automaticamente"
+          ],
+          "first_response_music_other": "",
+          "attentive_listening": "No",
+          "attentive_listening_examples": "",
+          "recognizes_songs": "No estoy seguro/a",
+          "liked_music_types": [
+            "Voces masculinas"
+          ],
+          "liked_music_other": "",
+          "favorite_songs": "",
+          "disliked_music_types": "",
+          "rejection_expression": [
+            "Se irrita"
+          ],
+          "rejection_expression_other": "",
+          "sens_loud_sounds": "",
+          "sens_soft_sounds": "",
+          "sens_loud_voices": "",
+          "sens_instruments": "",
+          "preferred_timbres": [
+            "Piano"
+          ],
+          "preferred_timbres_other": "",
+          "avoided_timbres": "",
+          "moves_with_music": "",
+          "movement_behaviors": [],
+          "movement_behaviors_other": "",
+          "rhythm_pulse_stable": "4",
+          "rhythm_sync_steps": "",
+          "rhythm_reproduce_patterns": "",
+          "hits_instruments_hard": "",
+          "seeks_vibrations": "",
+          "seeks_vibrations_details": "",
+          "avoids_textures": "",
+          "avoids_textures_details": "",
+          "seeks_material_temperature": "No",
+          "seeks_material_temperature_details": "",
+          "calming_music": "",
+          "activating_music": "",
+          "rejecting_sounds": "",
+          "emotional_reactions": [],
+          "emotional_reactions_other": "",
+          "vocalizes_with_music": "",
+          "vocalizes_more_in_silence": "",
+          "imitates_melodies": "",
+          "uses_music_to_communicate": "",
+          "uses_music_to_communicate_examples": "",
+          "family_additional_notes": "",
+          "module_a_regulacion_0": "",
+          "module_a_regulacion_1": "",
+          "module_a_regulacion_2": "",
+          "module_a_regulacion_3": "",
+          "module_a_regulacion_4": "",
+          "module_a_regulacion_5": "",
+          "module_a_regulacion_6": "",
+          "module_a_temporal_0": "",
+          "module_a_temporal_1": "",
+          "module_a_temporal_2": "3",
+          "module_a_temporal_3": "4",
+          "module_a_temporal_4": "3",
+          "module_a_temporal_5": "",
+          "module_a_audio_motor_0": "",
+          "module_a_audio_motor_1": "",
+          "module_a_audio_motor_2": "4",
+          "module_a_audio_motor_3": "",
+          "module_a_audio_motor_4": "",
+          "module_a_comunicacion_0": "",
+          "module_a_comunicacion_1": "",
+          "module_a_comunicacion_2": "",
+          "module_a_comunicacion_3": "",
+          "module_a_comunicacion_4": "",
+          "module_a_comunicacion_5": "",
+          "module_a_ejecutivas_0": "",
+          "module_a_ejecutivas_1": "4",
+          "module_a_ejecutivas_2": "",
+          "module_a_ejecutivas_3": "",
+          "module_a_ejecutivas_4": "",
+          "module_a_ejecutivas_5": ""
+        }
+      },
+      "moduloB": {
+        "savedAt": "2026-04-29T23:24:56.263Z",
+        "values": {
+          "patient_name": "Juan",
+          "patient_age": "4",
+          "clinical_date": "",
+          "evaluator_name": "",
+          "clinical_context": "Consultorio",
+          "clinical_context_other": "",
+          "intensidad_sonora_score": "2",
+          "intensidad_sonora_observables": [],
+          "intensidad_sonora_notes": "",
+          "silencio_score": "",
+          "latencia_ruptura_silencio": "",
+          "silencio_sub_regulacion": "",
+          "silencio_sub_busqueda": "3",
+          "silencio_sub_atencion": "",
+          "silencio_sub_tolerancia_temporal": "",
+          "silencio_sub_social": "",
+          "silencio_observables": [],
+          "silencio_notes": "",
+          "sincronizacion_score": "",
+          "sincronizacion_error_medio": "",
+          "sincronizacion_jitter": "",
+          "sincronizacion_tipo_error": "",
+          "sincronizacion_observables": [],
+          "sincronizacion_notes": "",
+          "continuacion_score": "",
+          "continuacion_observables": [],
+          "continuacion_notes": "",
+          "cambio_tempo_score": "",
+          "cambio_tempo_latencia": "",
+          "cambio_tempo_observables": [],
+          "cambio_tempo_notes": "",
+          "movimiento_libre_score": "",
+          "movimiento_libre_observables": [
+            "Parcial"
+          ],
+          "movimiento_libre_notes": "",
+          "imitacion_motora_score": "3",
+          "imitacion_motora_latencia": "",
+          "imitacion_motora_observables": [
+            "Aproximada"
+          ],
+          "imitacion_motora_notes": "",
+          "acoplamiento_score": "",
+          "acoplamiento_observables": [],
+          "acoplamiento_notes": "",
+          "turn_taking_score": "",
+          "turn_taking_observables": [],
+          "turn_taking_notes": "",
+          "imitacion_vocal_score": "",
+          "imitacion_vocal_observables": [],
+          "imitacion_vocal_notes": "",
+          "interaccion_libre_score": "",
+          "interaccion_libre_reciprocidad": "",
+          "interaccion_libre_observables": [],
+          "interaccion_libre_notes": "",
+          "stop_musical_score": "3",
+          "stop_musical_observables": [],
+          "stop_musical_notes": "",
+          "cambio_regla_score": "3",
+          "cambio_regla_observables": [],
+          "cambio_regla_notes": "",
+          "secuencia_score": "3",
+          "secuencia_observables": [],
+          "secuencia_notes": "",
+          "global_markers": [],
+          "integrated_observations": "",
+          "initial_guidance": ""
+        }
+      },
+      "compartir_familia": {
+        "estado": "placeholder"
+      },
+      "moduloARequest": {
+        "moduleType": "BNPM_MODULO_A",
+        "token": "1b6207e0eb342efc17ad86feb4e1f928c4fbd608644b8aa8",
+        "status": "completado",
+        "createdAt": "2026-04-25T19:02:02.603Z",
+        "submittedAt": "2026-04-25T19:13:53.323Z",
+        "completedAt": "2026-04-25T19:13:53.323Z",
+        "invalidatedAt": null,
+        "publicUrl": "http://localhost:3000/familia/modulo-a/1b6207e0eb342efc17ad86feb4e1f928c4fbd608644b8aa8",
+        "respondentName": "Ruben",
+        "respondentRelation": "Padre"
+      }
+    }
+  },
+  {
+    "fecha": "2026-04-25",
+    "nombre": "Bruno",
+    "email": "",
+    "investigador": "",
+    "medicacion": "",
+    "psicopatologia": "",
+    "diagnostico": "",
+    "dominancia": "",
+    "manoInicio": "",
+    "medidasManos": {},
+    "evaluaciones_detalladas": [],
+    "tipo_registro": "nino",
+    "tipo_evaluacion": "bnpm_nino",
+    "fecha_nacimiento": "",
+    "edad": "2",
+    "derivacion": "",
+    "observaciones_iniciales": "",
+    "bnpm": {
+      "moduloA": {
+        "savedAt": "2026-04-25T19:45:24.946Z",
+        "source": "familia",
+        "submittedAt": "2026-04-25T19:45:24.946Z",
+        "respondentName": "Ale",
+        "respondentRelation": "Madre",
+        "values": {
+          "child_name": "Bruno",
+          "child_birth_date": "",
+          "child_age": "2",
+          "respondent_name": "Ale",
+          "respondent_relation": "Madre",
+          "form_date": "",
+          "referral_source": "",
+          "consultation_reason": "",
+          "home_sound_environment": "",
+          "school_sound_environment": "",
+          "silence_behavior": [],
+          "silence_behavior_other": "",
+          "vocalizes_in_silence": "",
+          "vocalizes_in_silence_notes": "",
+          "self_stimulation_sound": [],
+          "self_stimulation_other": "",
+          "music_seek_frequency": "",
+          "first_response_music": [],
+          "first_response_music_other": "",
+          "attentive_listening": "",
+          "attentive_listening_examples": "",
+          "recognizes_songs": "",
+          "liked_music_types": [],
+          "liked_music_other": "",
+          "favorite_songs": "",
+          "disliked_music_types": "",
+          "rejection_expression": [],
+          "rejection_expression_other": "",
+          "sens_loud_sounds": "",
+          "sens_soft_sounds": "",
+          "sens_loud_voices": "",
+          "sens_instruments": "",
+          "preferred_timbres": [],
+          "preferred_timbres_other": "",
+          "avoided_timbres": "",
+          "moves_with_music": "",
+          "movement_behaviors": [],
+          "movement_behaviors_other": "",
+          "rhythm_pulse_stable": "",
+          "rhythm_sync_steps": "",
+          "rhythm_reproduce_patterns": "",
+          "hits_instruments_hard": "",
+          "seeks_vibrations": "",
+          "seeks_vibrations_details": "",
+          "avoids_textures": "",
+          "avoids_textures_details": "",
+          "seeks_material_temperature": "",
+          "seeks_material_temperature_details": "",
+          "calming_music": "",
+          "activating_music": "",
+          "rejecting_sounds": "",
+          "emotional_reactions": [],
+          "emotional_reactions_other": "",
+          "vocalizes_with_music": "",
+          "vocalizes_more_in_silence": "",
+          "imitates_melodies": "",
+          "uses_music_to_communicate": "",
+          "uses_music_to_communicate_examples": "",
+          "family_additional_notes": "",
+          "module_a_regulacion_0": "",
+          "module_a_regulacion_1": "",
+          "module_a_regulacion_2": "",
+          "module_a_regulacion_3": "",
+          "module_a_regulacion_4": "",
+          "module_a_regulacion_5": "",
+          "module_a_regulacion_6": "",
+          "module_a_temporal_0": "",
+          "module_a_temporal_1": "",
+          "module_a_temporal_2": "",
+          "module_a_temporal_3": "",
+          "module_a_temporal_4": "",
+          "module_a_temporal_5": "",
+          "module_a_audio_motor_0": "",
+          "module_a_audio_motor_1": "",
+          "module_a_audio_motor_2": "",
+          "module_a_audio_motor_3": "",
+          "module_a_audio_motor_4": "",
+          "module_a_comunicacion_0": "",
+          "module_a_comunicacion_1": "",
+          "module_a_comunicacion_2": "",
+          "module_a_comunicacion_3": "",
+          "module_a_comunicacion_4": "",
+          "module_a_comunicacion_5": "",
+          "module_a_ejecutivas_0": "",
+          "module_a_ejecutivas_1": "",
+          "module_a_ejecutivas_2": "",
+          "module_a_ejecutivas_3": "",
+          "module_a_ejecutivas_4": "",
+          "module_a_ejecutivas_5": ""
+        }
+      },
+      "moduloB": null,
+      "compartir_familia": {
+        "estado": "placeholder"
+      },
+      "moduloARequest": {
+        "moduleType": "BNPM_MODULO_A",
+        "token": "2718d98db88eb0d7f6ffd45819732003f4998338f70630de",
+        "status": "pendiente",
+        "createdAt": "2026-05-20T02:46:05.656Z",
+        "submittedAt": null,
+        "completedAt": null,
+        "invalidatedAt": null,
+        "publicUrl": "http://localhost:3000/familia/modulo-a/2718d98db88eb0d7f6ffd45819732003f4998338f70630de"
+      }
+    }
+  },
+  {
+    "fecha": "2026-04-29",
+    "nombre": "Caro",
+    "email": "",
+    "investigador": "",
+    "medicacion": "",
+    "psicopatologia": "",
+    "diagnostico": "n",
+    "dominancia": "Diestro",
+    "tipo_registro": "adulto",
+    "manoInicio": "Derecha",
+    "medidasManos": {
+      "md_mayor": "",
+      "md_indice": "",
+      "mi_mayor": "",
+      "mi_indice": ""
+    },
+    "evaluaciones_detalladas": [
+      {
+        "nro_pista": 1,
+        "archivo": "isocronos/metronomo_isocrono132bpm.wav",
+        "mano_evaluada": "Derecha",
+        "rhythm_identification": "Rara vez",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "Consistente"
+      },
+      {
+        "nro_pista": 2,
+        "archivo": "abruptos/PA+33/PA+33__21-40.wav",
+        "mano_evaluada": "Derecha",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 3,
+        "archivo": "rampa/PR-10/PR-10__23-10-30.wav",
+        "mano_evaluada": "Derecha",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 4,
+        "archivo": "rampa/PR+10/PR+10__21-10-30.wav",
+        "mano_evaluada": "Derecha",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 5,
+        "archivo": "isocronos/metronomo_isocrono160bpm.wav",
+        "mano_evaluada": "Derecha",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 6,
+        "archivo": "abruptos/PA+10/PA+10__22-40.wav",
+        "mano_evaluada": "Derecha",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 7,
+        "archivo": "isocronos/metronomo_isocrono120bpm.wav",
+        "mano_evaluada": "Derecha",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 8,
+        "archivo": "rampa/PR+33/PR+33__24-10-30.wav",
+        "mano_evaluada": "Derecha",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 9,
+        "archivo": "abruptos/PA-10/PA-10__21-40.wav",
+        "mano_evaluada": "Derecha",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 10,
+        "archivo": "rampa/PR-33/PR-33__20-10-30.wav",
+        "mano_evaluada": "Derecha",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 11,
+        "archivo": "abruptos/PA-33/PA-33__22-40.wav",
+        "mano_evaluada": "Derecha",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 12,
+        "archivo": "isocronos/metronomo_isocrono108bpm.wav",
+        "mano_evaluada": "Derecha",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 13,
+        "archivo": "isocronos/metronomo_isocrono80bpm.wav",
+        "mano_evaluada": "Derecha",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 14,
+        "archivo": "rampa/PR-10/PR-10__20-10-30.wav",
+        "mano_evaluada": "Izquierda",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 15,
+        "archivo": "rampa/PR-33/PR-33__21-10-30.wav",
+        "mano_evaluada": "Izquierda",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 16,
+        "archivo": "isocronos/metronomo_isocrono108bpm.wav",
+        "mano_evaluada": "Izquierda",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 17,
+        "archivo": "abruptos/PA-10/PA-10__25-40.wav",
+        "mano_evaluada": "Izquierda",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 18,
+        "archivo": "isocronos/metronomo_isocrono80bpm.wav",
+        "mano_evaluada": "Izquierda",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 19,
+        "archivo": "rampa/PR+10/PR+10__23-10-30.wav",
+        "mano_evaluada": "Izquierda",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 20,
+        "archivo": "isocronos/metronomo_isocrono160bpm.wav",
+        "mano_evaluada": "Izquierda",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 21,
+        "archivo": "isocronos/metronomo_isocrono120bpm.wav",
+        "mano_evaluada": "Izquierda",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 22,
+        "archivo": "isocronos/metronomo_isocrono132bpm.wav",
+        "mano_evaluada": "Izquierda",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 23,
+        "archivo": "abruptos/PA+10/PA+10__25-40.wav",
+        "mano_evaluada": "Izquierda",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 24,
+        "archivo": "rampa/PR+33/PR+33__25-10-30.wav",
+        "mano_evaluada": "Izquierda",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 25,
+        "archivo": "abruptos/PA+33/PA+33__24-40.wav",
+        "mano_evaluada": "Izquierda",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 26,
+        "archivo": "abruptos/PA-33/PA-33__24-40.wav",
+        "mano_evaluada": "Izquierda",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      }
+    ],
+    "consentFileUrl": "/consentimientos/paciente_18/consentimiento_firmado.pdf",
+    "consentFileName": "consentimiento.pdf",
+    "consentUploadedAt": "2026-05-24T23:43:03.639Z"
+  },
+  {
+    "fecha": "2026-04-29",
+    "nombre": "Caro",
+    "email": "",
+    "investigador": "",
+    "medicacion": "",
+    "psicopatologia": "",
+    "diagnostico": "d",
+    "dominancia": "Diestro",
+    "tipo_registro": "adulto",
+    "manoInicio": "Derecha",
+    "medidasManos": {
+      "md_mayor": "",
+      "md_indice": "",
+      "mi_mayor": "",
+      "mi_indice": ""
+    },
+    "evaluaciones_detalladas": [
+      {
+        "nro_pista": 1,
+        "archivo": "isocronos/metronomo_isocrono120bpm.wav",
+        "mano_evaluada": "Derecha",
+        "rhythm_identification": "Rara vez",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "Consistente"
+      },
+      {
+        "nro_pista": 2,
+        "archivo": "abruptos/PA-33/PA-33__20-40.wav",
+        "mano_evaluada": "Derecha",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 3,
+        "archivo": "rampa/PR-33/PR-33__24-10-30.wav",
+        "mano_evaluada": "Derecha",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 4,
+        "archivo": "rampa/PR+33/PR+33__23-10-30.wav",
+        "mano_evaluada": "Derecha",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 5,
+        "archivo": "isocronos/metronomo_isocrono80bpm.wav",
+        "mano_evaluada": "Derecha",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 6,
+        "archivo": "abruptos/PA+33/PA+33__20-40.wav",
+        "mano_evaluada": "Derecha",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 7,
+        "archivo": "rampa/PR-10/PR-10__25-10-30.wav",
+        "mano_evaluada": "Derecha",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      }
+    ]
+  },
+  {
+    "fecha": "2026-05-30",
+    "nombre": "d",
+    "email": "",
+    "investigador": "",
+    "medicacion": "",
+    "psicopatologia": "",
+    "diagnostico": "dd",
+    "dominancia": "Zurdo",
+    "tipo_registro": "adulto",
+    "manoInicio": "Derecha",
+    "medidasManos": {
+      "md_mayor": "",
+      "md_indice": "",
+      "mi_mayor": "",
+      "mi_indice": ""
+    },
+    "evaluaciones_detalladas": [
+      {
+        "nro_pista": 1,
+        "archivo": "rampa/PR-33/PR-33__21-10-30.wav",
+        "mano_evaluada": "Derecha",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 2,
+        "archivo": "rampa/PR-10/PR-10__20-10-30.wav",
+        "mano_evaluada": "Derecha",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 3,
+        "archivo": "isocronos/metronomo_isocrono132bpm.wav",
+        "mano_evaluada": "Derecha",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 4,
+        "archivo": "isocronos/metronomo_isocrono160bpm.wav",
+        "mano_evaluada": "Derecha",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 5,
+        "archivo": "abruptos/PA+33/PA+33__22-40.wav",
+        "mano_evaluada": "Derecha",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 6,
+        "archivo": "rampa/PR+10/PR+10__22-10-30.wav",
+        "mano_evaluada": "Derecha",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 7,
+        "archivo": "abruptos/PA+10/PA+10__23-40.wav",
+        "mano_evaluada": "Derecha",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 8,
+        "archivo": "isocronos/metronomo_isocrono120bpm.wav",
+        "mano_evaluada": "Derecha",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 9,
+        "archivo": "abruptos/PA-10/PA-10__21-40.wav",
+        "mano_evaluada": "Derecha",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 10,
+        "archivo": "isocronos/metronomo_isocrono108bpm.wav",
+        "mano_evaluada": "Derecha",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 11,
+        "archivo": "rampa/PR+33/PR+33__22-10-30.wav",
+        "mano_evaluada": "Derecha",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 12,
+        "archivo": "abruptos/PA-33/PA-33__20-40.wav",
+        "mano_evaluada": "Derecha",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 13,
+        "archivo": "isocronos/metronomo_isocrono80bpm.wav",
+        "mano_evaluada": "Derecha",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 14,
+        "archivo": "rampa/PR+33/PR+33__23-10-30.wav",
+        "mano_evaluada": "Izquierda",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 15,
+        "archivo": "isocronos/metronomo_isocrono108bpm.wav",
+        "mano_evaluada": "Izquierda",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 16,
+        "archivo": "rampa/PR-10/PR-10__20-10-30.wav",
+        "mano_evaluada": "Izquierda",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 17,
+        "archivo": "isocronos/metronomo_isocrono120bpm.wav",
+        "mano_evaluada": "Izquierda",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 18,
+        "archivo": "rampa/PR-33/PR-33__24-10-30.wav",
+        "mano_evaluada": "Izquierda",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 19,
+        "archivo": "abruptos/PA+10/PA+10__20-40.wav",
+        "mano_evaluada": "Izquierda",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 20,
+        "archivo": "rampa/PR+10/PR+10__20-10-30.wav",
+        "mano_evaluada": "Izquierda",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 21,
+        "archivo": "abruptos/PA+33/PA+33__24-40.wav",
+        "mano_evaluada": "Izquierda",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 22,
+        "archivo": "isocronos/metronomo_isocrono132bpm.wav",
+        "mano_evaluada": "Izquierda",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 23,
+        "archivo": "isocronos/metronomo_isocrono160bpm.wav",
+        "mano_evaluada": "Izquierda",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 24,
+        "archivo": "abruptos/PA-10/PA-10__24-40.wav",
+        "mano_evaluada": "Izquierda",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 25,
+        "archivo": "abruptos/PA-33/PA-33__22-40.wav",
+        "mano_evaluada": "Izquierda",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 26,
+        "archivo": "isocronos/metronomo_isocrono80bpm.wav",
+        "mano_evaluada": "Izquierda",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      }
+    ]
+  },
+  {
+    "fecha": "2026-05-30",
+    "nombre": "d",
+    "email": "",
+    "investigador": "",
+    "medicacion": "",
+    "psicopatologia": "",
+    "diagnostico": "dd",
+    "dominancia": "Zurdo",
+    "tipo_registro": "adulto",
+    "manoInicio": "Derecha",
+    "medidasManos": {
+      "md_mayor": "",
+      "md_indice": "",
+      "mi_mayor": "",
+      "mi_indice": ""
+    },
+    "evaluaciones_detalladas": [
+      {
+        "nro_pista": 1,
+        "archivo": "isocronos/metronomo_isocrono80bpm.wav",
+        "mano_evaluada": "Derecha",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 2,
+        "archivo": "isocronos/metronomo_isocrono108bpm.wav",
+        "mano_evaluada": "Derecha",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 3,
+        "archivo": "abruptos/PA-33/PA-33__21-40.wav",
+        "mano_evaluada": "Derecha",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 4,
+        "archivo": "isocronos/metronomo_isocrono132bpm.wav",
+        "mano_evaluada": "Derecha",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 5,
+        "archivo": "abruptos/PA-10/PA-10__23-40.wav",
+        "mano_evaluada": "Derecha",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 6,
+        "archivo": "rampa/PR-10/PR-10__22-10-30.wav",
+        "mano_evaluada": "Derecha",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 7,
+        "archivo": "rampa/PR-33/PR-33__22-10-30.wav",
+        "mano_evaluada": "Derecha",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 8,
+        "archivo": "rampa/PR+33/PR+33__21-10-30.wav",
+        "mano_evaluada": "Derecha",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 9,
+        "archivo": "isocronos/metronomo_isocrono160bpm.wav",
+        "mano_evaluada": "Derecha",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 10,
+        "archivo": "abruptos/PA+10/PA+10__22-40.wav",
+        "mano_evaluada": "Derecha",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 11,
+        "archivo": "isocronos/metronomo_isocrono120bpm.wav",
+        "mano_evaluada": "Derecha",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 12,
+        "archivo": "abruptos/PA+33/PA+33__20-40.wav",
+        "mano_evaluada": "Derecha",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 13,
+        "archivo": "rampa/PR+10/PR+10__20-10-30.wav",
+        "mano_evaluada": "Derecha",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 14,
+        "archivo": "isocronos/metronomo_isocrono80bpm.wav",
+        "mano_evaluada": "Izquierda",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 15,
+        "archivo": "isocronos/metronomo_isocrono160bpm.wav",
+        "mano_evaluada": "Izquierda",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 16,
+        "archivo": "abruptos/PA+10/PA+10__24-40.wav",
+        "mano_evaluada": "Izquierda",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 17,
+        "archivo": "isocronos/metronomo_isocrono108bpm.wav",
+        "mano_evaluada": "Izquierda",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 18,
+        "archivo": "rampa/PR+10/PR+10__25-10-30.wav",
+        "mano_evaluada": "Izquierda",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 19,
+        "archivo": "abruptos/PA-10/PA-10__24-40.wav",
+        "mano_evaluada": "Izquierda",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 20,
+        "archivo": "abruptos/PA-33/PA-33__21-40.wav",
+        "mano_evaluada": "Izquierda",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 21,
+        "archivo": "isocronos/metronomo_isocrono120bpm.wav",
+        "mano_evaluada": "Izquierda",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 22,
+        "archivo": "isocronos/metronomo_isocrono132bpm.wav",
+        "mano_evaluada": "Izquierda",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 23,
+        "archivo": "abruptos/PA+33/PA+33__24-40.wav",
+        "mano_evaluada": "Izquierda",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 24,
+        "archivo": "rampa/PR+33/PR+33__20-10-30.wav",
+        "mano_evaluada": "Izquierda",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 25,
+        "archivo": "rampa/PR-33/PR-33__21-10-30.wav",
+        "mano_evaluada": "Izquierda",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 26,
+        "archivo": "rampa/PR-10/PR-10__21-10-30.wav",
+        "mano_evaluada": "Izquierda",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      }
+    ]
+  },
+  {
+    "fecha": "2026-05-30",
+    "nombre": "d",
+    "email": "",
+    "investigador": "",
+    "medicacion": "",
+    "psicopatologia": "",
+    "diagnostico": "dd",
+    "dominancia": "Zurdo",
+    "tipo_registro": "adulto",
+    "manoInicio": "Derecha",
+    "medidasManos": {
+      "md_mayor": "",
+      "md_indice": "",
+      "mi_mayor": "",
+      "mi_indice": ""
+    },
+    "evaluaciones_detalladas": [
+      {
+        "nro_pista": 1,
+        "archivo": "isocronos/metronomo_isocrono132bpm.wav",
+        "mano_evaluada": "Derecha",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 2,
+        "archivo": "isocronos/metronomo_isocrono80bpm.wav",
+        "mano_evaluada": "Derecha",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 3,
+        "archivo": "isocronos/metronomo_isocrono108bpm.wav",
+        "mano_evaluada": "Derecha",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 4,
+        "archivo": "isocronos/metronomo_isocrono120bpm.wav",
+        "mano_evaluada": "Derecha",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 5,
+        "archivo": "abruptos/PA+10/PA+10__21-40.wav",
+        "mano_evaluada": "Derecha",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 6,
+        "archivo": "isocronos/metronomo_isocrono160bpm.wav",
+        "mano_evaluada": "Derecha",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 7,
+        "archivo": "rampa/PR+33/PR+33__23-10-30.wav",
+        "mano_evaluada": "Derecha",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 8,
+        "archivo": "abruptos/PA-33/PA-33__25-40.wav",
+        "mano_evaluada": "Derecha",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 9,
+        "archivo": "abruptos/PA-10/PA-10__20-40.wav",
+        "mano_evaluada": "Derecha",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 10,
+        "archivo": "abruptos/PA+33/PA+33__21-40.wav",
+        "mano_evaluada": "Derecha",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 11,
+        "archivo": "rampa/PR-33/PR-33__24-10-30.wav",
+        "mano_evaluada": "Derecha",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 12,
+        "archivo": "rampa/PR-10/PR-10__23-10-30.wav",
+        "mano_evaluada": "Derecha",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 13,
+        "archivo": "rampa/PR+10/PR+10__25-10-30.wav",
+        "mano_evaluada": "Derecha",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 14,
+        "archivo": "rampa/PR+33/PR+33__20-10-30.wav",
+        "mano_evaluada": "Izquierda",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 15,
+        "archivo": "abruptos/PA+33/PA+33__22-40.wav",
+        "mano_evaluada": "Izquierda",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 16,
+        "archivo": "isocronos/metronomo_isocrono108bpm.wav",
+        "mano_evaluada": "Izquierda",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 17,
+        "archivo": "rampa/PR+10/PR+10__21-10-30.wav",
+        "mano_evaluada": "Izquierda",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 18,
+        "archivo": "rampa/PR-10/PR-10__25-10-30.wav",
+        "mano_evaluada": "Izquierda",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 19,
+        "archivo": "isocronos/metronomo_isocrono132bpm.wav",
+        "mano_evaluada": "Izquierda",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 20,
+        "archivo": "isocronos/metronomo_isocrono80bpm.wav",
+        "mano_evaluada": "Izquierda",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 21,
+        "archivo": "abruptos/PA-10/PA-10__23-40.wav",
+        "mano_evaluada": "Izquierda",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 22,
+        "archivo": "isocronos/metronomo_isocrono120bpm.wav",
+        "mano_evaluada": "Izquierda",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 23,
+        "archivo": "abruptos/PA+10/PA+10__24-40.wav",
+        "mano_evaluada": "Izquierda",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 24,
+        "archivo": "isocronos/metronomo_isocrono160bpm.wav",
+        "mano_evaluada": "Izquierda",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 25,
+        "archivo": "abruptos/PA-33/PA-33__21-40.wav",
+        "mano_evaluada": "Izquierda",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 26,
+        "archivo": "rampa/PR-33/PR-33__23-10-30.wav",
+        "mano_evaluada": "Izquierda",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      }
+    ]
+  },
+  {
+    "fecha": "2026-05-30",
+    "nombre": "C",
+    "email": "",
+    "investigador": "",
+    "medicacion": "",
+    "psicopatologia": "",
+    "diagnostico": "A",
+    "dominancia": "Diestro",
+    "tipo_registro": "adulto",
+    "manoInicio": "Derecha",
+    "medidasManos": {
+      "md_mayor": "",
+      "md_indice": "",
+      "mi_mayor": "",
+      "mi_indice": ""
+    },
+    "evaluaciones_detalladas": [
+      {
+        "nro_pista": 1,
+        "archivo": "isocronos/metronomo_isocrono160bpm.wav",
+        "mano_evaluada": "Derecha",
+        "rhythm_identification": "Consistente",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "Consistente"
+      },
+      {
+        "nro_pista": 2,
+        "archivo": "isocronos/metronomo_isocrono132bpm.wav",
+        "mano_evaluada": "Derecha",
+        "rhythm_identification": "Rara vez",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "Nunca"
+      },
+      {
+        "nro_pista": 3,
+        "archivo": "rampa/PR+33/PR+33__21-10-30.wav",
+        "mano_evaluada": "Derecha",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 4,
+        "archivo": "abruptos/PA+10/PA+10__24-40.wav",
+        "mano_evaluada": "Derecha",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 5,
+        "archivo": "rampa/PR-33/PR-33__25-10-30.wav",
+        "mano_evaluada": "Derecha",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 6,
+        "archivo": "isocronos/metronomo_isocrono80bpm.wav",
+        "mano_evaluada": "Derecha",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 7,
+        "archivo": "rampa/PR-10/PR-10__20-10-30.wav",
+        "mano_evaluada": "Derecha",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 8,
+        "archivo": "abruptos/PA+33/PA+33__23-40.wav",
+        "mano_evaluada": "Derecha",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 9,
+        "archivo": "isocronos/metronomo_isocrono108bpm.wav",
+        "mano_evaluada": "Derecha",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 10,
+        "archivo": "isocronos/metronomo_isocrono120bpm.wav",
+        "mano_evaluada": "Derecha",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 11,
+        "archivo": "abruptos/PA-33/PA-33__23-40.wav",
+        "mano_evaluada": "Derecha",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 12,
+        "archivo": "abruptos/PA-10/PA-10__24-40.wav",
+        "mano_evaluada": "Derecha",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 13,
+        "archivo": "rampa/PR+10/PR+10__22-10-30.wav",
+        "mano_evaluada": "Derecha",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 14,
+        "archivo": "isocronos/metronomo_isocrono132bpm.wav",
+        "mano_evaluada": "Izquierda",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 15,
+        "archivo": "rampa/PR+33/PR+33__25-10-30.wav",
+        "mano_evaluada": "Izquierda",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 16,
+        "archivo": "isocronos/metronomo_isocrono120bpm.wav",
+        "mano_evaluada": "Izquierda",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 17,
+        "archivo": "rampa/PR+10/PR+10__25-10-30.wav",
+        "mano_evaluada": "Izquierda",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 18,
+        "archivo": "rampa/PR-10/PR-10__20-10-30.wav",
+        "mano_evaluada": "Izquierda",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 19,
+        "archivo": "isocronos/metronomo_isocrono108bpm.wav",
+        "mano_evaluada": "Izquierda",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 20,
+        "archivo": "abruptos/PA+33/PA+33__24-40.wav",
+        "mano_evaluada": "Izquierda",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 21,
+        "archivo": "isocronos/metronomo_isocrono80bpm.wav",
+        "mano_evaluada": "Izquierda",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 22,
+        "archivo": "abruptos/PA+10/PA+10__21-40.wav",
+        "mano_evaluada": "Izquierda",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 23,
+        "archivo": "abruptos/PA-10/PA-10__21-40.wav",
+        "mano_evaluada": "Izquierda",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 24,
+        "archivo": "isocronos/metronomo_isocrono160bpm.wav",
+        "mano_evaluada": "Izquierda",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 25,
+        "archivo": "abruptos/PA-33/PA-33__21-40.wav",
+        "mano_evaluada": "Izquierda",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      },
+      {
+        "nro_pista": 26,
+        "archivo": "rampa/PR-33/PR-33__22-10-30.wav",
+        "mano_evaluada": "Izquierda",
+        "rhythm_identification": "No evaluado",
+        "tempo_variations": "No evaluado",
+        "rhythmic_accuracy": "No evaluado"
+      }
+    ],
+    "consentFileUrl": "/consentimientos/paciente_23/consentimiento_firmado.pdf",
+    "consentFileName": "MP Trienal - HIQX - Newton - MEC 5 Doble LED ME N - 27-05-2026.pdf",
+    "consentUploadedAt": "2026-05-30T05:20:05.733Z"
+  }
+]

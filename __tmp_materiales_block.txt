@@ -1,0 +1,34 @@
+                    <div class="bg-gray-50 p-6 rounded-lg border">
+                        <div class="flex items-center justify-between gap-4 mb-3 border-b pb-1">
+                            <h4 class="font-semibold text-gray-800">Materiales Necesarios</h4>
+                            <button type="button" id="toggle-paso-1-materiales"
+                                onclick="protocolo.toggleChecklistBlock('paso-1-materiales')"
+                                class="text-sm font-semibold text-action hover:text-action/80 transition">Marcar todos</button>
+                        </div>
+                        <div id="paso-1-materiales" class="space-y-3 bg-white p-4 rounded border border-gray-200 shadow-sm mb-6">
+                            <label class="flex items-start gap-3 cursor-pointer"><input type="checkbox"
+                                    class="w-5 h-5 mt-0.5 text-primary rounded border-gray-300"> <span
+                                    class="text-gray-700 text-sm">Cámara o dispositivo de grabación con batería cargada
+                                    y espacio disponible.</span></label>
+                            <label class="flex items-start gap-3 cursor-pointer"><input type="checkbox"
+                                    class="w-5 h-5 mt-0.5 text-primary rounded border-gray-300"> <span
+                                    class="text-gray-700 text-sm">Parlantes calibrados a volumen
+                                    estándar.</span></label>
+                            <label class="flex items-start gap-3 cursor-pointer"><input type="checkbox"
+                                    class="w-5 h-5 mt-0.5 text-primary rounded border-gray-300"> <span
+                                    class="text-gray-700 text-sm">Cuestionario impreso o acceso digital.</span></label>
+                            <label class="flex items-start gap-3 cursor-pointer"><input type="checkbox"
+                                    class="w-5 h-5 mt-0.5 text-primary rounded border-gray-300"> <span
+                                    class="text-gray-700 text-sm">Cronómetro (opcional como backup).</span></label>
+                            <label class="flex items-start gap-3 cursor-pointer"><input type="checkbox"
+                                    class="w-5 h-5 mt-0.5 text-primary rounded border-gray-300"> <span
+                                    class="text-gray-700 text-sm">Imprimir Checklist de estímulos y codificación de
+                                    IDs.</span></label>
+                            <label class="flex items-start gap-3 cursor-pointer"><input type="checkbox"
+                                    class="w-5 h-5 mt-0.5 text-primary rounded border-gray-300"> <span
+                                    class="text-gray-700 text-sm">Formulario para registro de datos y
+                                    observaciones.</span></label>
+                            <label class="flex items-start gap-3 cursor-pointer"><input type="checkbox"
+                                    class="w-5 h-5 mt-0.5 text-primary rounded border-gray-300"> <span
+                                    class="text-gray-700 text-sm">Impresión del Consentimiento Informado.</span></label>
+                        </div>

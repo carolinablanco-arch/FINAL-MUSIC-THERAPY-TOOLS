@@ -1,0 +1,194 @@
+[
+  {
+    "id": "1a978cc6d25405c042b537735010ea4a",
+    "name": "Carolina",
+    "email": "carolina.blanco@mi.unc.edu.ar",
+    "passwordHash": "scrypt$b483382a86a950d4fc8e68db3f5a148c$0030cbb1f6d8cd72d1f3e6c4b60097d572da1e385ed56979940380238ba2cbdf4f2153fc8a5a843f0db8c31c3714d5ec2630238056a20126f276df9b3ffb49fe",
+    "role": "admin",
+    "createdAt": "2026-06-06T22:27:43.890Z"
+  },
+  {
+    "id": "a5ca440f718198cefc7ba8fc4a14d14d",
+    "name": "Bruno",
+    "email": "bruno.passadore@mi.unc.edu.ar",
+    "passwordHash": "scrypt$eb32c4bc722c65c8e432d3dc38df6220$8281e0b26fdbe1df8de5717be04267c990dc612e73e3adb6afd250a8fd782fe98c527ebe1a5a89134d2fe731a2c55b0d4e504bd98835dc6ed6bdfd9411d85060",
+    "role": "musicoterapeuta",
+    "createdAt": "2026-06-06T22:57:04.142Z"
+  },
+  {
+    "id": "82cd82c16a0376f800ad144e02a1fcd0",
+    "name": "Rosario",
+    "email": "rosario.escudero@mi.unc.edu.ar",
+    "passwordHash": "scrypt$daedb7fde43e9ff6588d27280fa4eedf$9c1ec759a83095096c8431763769063ae734bcd5595365478036280861308402e87f33d183da8261f1bec2b811d6d4941613a684b4be9307c331c3883193396f",
+    "role": "admin",
+    "createdAt": "2026-06-07T00:32:41.421Z"
+  },
+  {
+    "id": "1892b8e7d193b18b9bf9d97950b15fea",
+    "name": "Juan",
+    "email": "juan.ignacio.suarez@mi.unc.edu.ar",
+    "passwordHash": "scrypt$bc072a49b7f3012c9c595b4e54e4c5cc$0373068223a8fc75c9cd98265b61be96e44151fc85511eadecc974df71fb664419fe38ecc3e6bb73bdcf36c52b5b0c17cd356c523c3dd3f76a1c22b5273b9533",
+    "role": "musicoterapeuta",
+    "createdAt": "2026-06-07T13:52:11.400Z"
+  },
+  {
+    "id": "4edae7ffbb2ffc700b11cc70a9595357",
+    "name": "Marianela",
+    "email": "marianela.pacheco@mi.unc.edu.ar",
+    "passwordHash": "scrypt$28c88bab1b95e1f41cee41a27322b91a$59fbc224416eafbb1f70f358081bcc1501ca8c1e17c0cc6d81b7678adb9ad0a1742a4d44ca83b2a71c67c0b457380efa50c2ed1374d0293f1422aa4c4a06b550",
+    "role": "musicoterapeuta",
+    "createdAt": "2026-06-07T13:53:06.752Z"
+  },
+  {
+    "id": "099b0f49dd6c3051cb77eadffd51e42b",
+    "name": "Carolina Maldonado",
+    "email": "ana.carolina.maldonado@unc.edu.ar",
+    "passwordHash": "scrypt$b3f18bfc0829c52ea3a1cabc06d4a3e3$436cd28eb0319b9d5e8d2a807a9eaaeae64744df3ef841bca75d6e21d346cf2cde082f14e3a674ba77ae2083bd2844c377a028c54f65f863df8167c2175f09c7",
+    "role": "musicoterapeuta",
+    "createdAt": "2026-06-07T13:53:57.204Z"
+  },
+  {
+    "id": "82369333d6f85115826dce566d1b250d",
+    "name": "Fran Garcia",
+    "email": "fran.garcia.pinasco@mi.unc.edu.ar",
+    "passwordHash": "scrypt$567f8eadc580bb65698bbab8e8b1ebfe$7f8be7b99f1958179b92b0f0d0d55378b073254f1539021370d14536d3ef334fc77151db2ce43bf6072e16e24228d61f84afb80823c41e925d9cb51a42974bf7",
+    "role": "musicoterapeuta",
+    "createdAt": "2026-06-07T13:54:39.240Z"
+  },
+  {
+    "id": "ad436caec3b9e5befcf1155d0436e73a",
+    "name": "María Cecilia Litre",
+    "email": "mt.litre@gmail.com",
+    "passwordHash": "scrypt$fe8d33d5b14eec73910f7e38c0fd9b30$c4f32027a0b19ebf6ed3d60a467729a9925cef0ff6d0dcef26eb265468e3879557007b65cbc859c2aad6a2ddc4a49bda872d8dc097dba6bc67434cb2fa7b4e10",
+    "role": "musicoterapeuta",
+    "createdAt": "2026-06-21T23:11:27.419Z"
+  },
+  {
+    "id": "cf9bbb2a569248d86b6cb8624c7271cb",
+    "name": "Liliana Gassull",
+    "email": "liligassull@gmail.com",
+    "passwordHash": "scrypt$20fac9bcd8e4dd2a949c549a8c3e258a$624c8bbe8fabb553b1fb37c8b40d55cc49b8e2a50f80882f311061b6fd96899017acf87b8eeaa3a121cdf8d8f9d0e131cc8436484f075783bbd20f44ce3ae4d7",
+    "role": "musicoterapeuta",
+    "createdAt": "2026-06-21T23:12:27.070Z"
+  },
+  {
+    "id": "535455e200b08f450af2302da49905b9",
+    "name": "Alejandro Espinosa",
+    "email": "aleespinosa2000@hotmail.com",
+    "passwordHash": "scrypt$40bec94f9acf2a2ca9ee48c0c3b27c85$a2205bdf474267dc9a3d372e61eb8024e2314ae3f5b49cd1a03feced800f089b00e1a7edd26582c123e4fa85d8455d7cc9fc5cfdc657380316e9c141120e506a",
+    "role": "musicoterapeuta",
+    "createdAt": "2026-06-21T23:13:11.396Z"
+  },
+  {
+    "id": "b4c29843ae032dbde6f1d3803e2ff288",
+    "name": "Cecilia Moscuzza",
+    "email": "cecimoscu@gmail.com",
+    "passwordHash": "scrypt$c98bbe380d033656e9d50269beed8eee$13a859d51233a35c0c021d8d1dcbbe88ca83571c09af78e6f819aa1379c14d3ee174e05b74503fc8ca19f5ae199f289cc123709ffa35542a8438cf5b7247fcf1",
+    "role": "musicoterapeuta",
+    "createdAt": "2026-06-21T23:14:00.348Z"
+  },
+  {
+    "id": "66814335b9380f10c431bcab0702e6ea",
+    "name": "Virginia Tosto",
+    "email": "virginiatosto@gmail.com",
+    "passwordHash": "scrypt$11b9322a18113b3bfe37becff5f9ee9f$71d667c968f25e84447e844ade17a05f0188bb65de65711f17a654344feaa700406b97ef8c429837bfd850826e6c0e64e07a05c466f7f88665f78e9ccfeb0833",
+    "role": "musicoterapeuta",
+    "createdAt": "2026-06-21T23:16:08.416Z"
+  },
+  {
+    "id": "d282dfc575397f3dfedc2045a6e2eec4",
+    "name": "Soledad Ochoa",
+    "email": "ochsoles@gmail.com",
+    "passwordHash": "scrypt$cbb148463089e291b69e156897189ae4$dc7f8f6246526abcbb46f10a116960f1bc8023a6b9085b3082c7c73578a064df42a810d09f292fac5517c8b63a0203926c8b66d3540cf1e40c0ccc1ab726c76a",
+    "role": "musicoterapeuta",
+    "createdAt": "2026-06-21T23:16:44.274Z"
+  },
+  {
+    "id": "57127fa43220fb69de2354e31b171c0e",
+    "name": "María Elena Santajuliana",
+    "email": "mariaelenamusicoterapia@gmail.com",
+    "passwordHash": "scrypt$c642ab7d8e51594d56a5547ee3f14d81$833aaf70ee232dfdfafa8f91542adc85cd7de6d4cf8ded6688720eff77127e84e6cae32945d1b9e1c5894ead8653a3a9d34aa305fadbe3aada0b67894e03dd95",
+    "role": "musicoterapeuta",
+    "createdAt": "2026-06-21T23:17:34.121Z"
+  },
+  {
+    "id": "75e5a691466e48f9dd3a8f23858c0a93",
+    "name": "Evelin Araceli Riva",
+    "email": "evelinriva1@gmail.com",
+    "passwordHash": "scrypt$16017ced91cfb92581fae2d7d63dc497$c06b5e0679514f719fbe3eda029130117b5b07941cfb9e773ac34301d8c9856175a591261236a02bfd3bbf16f908ad71d6126f0bde856cdfcc9ce8f14e036cbb",
+    "role": "musicoterapeuta",
+    "createdAt": "2026-06-21T23:18:14.876Z"
+  },
+  {
+    "id": "91a71496d9e293d7bf3b89487782c21b",
+    "name": "Isabelle Moreau",
+    "email": "isabellelauramoreau@gmail.com",
+    "passwordHash": "scrypt$e7de30a5b65ca0369380b2ce3628ad73$47b2fe82595e81e4c025aa65f369847144055ea9b0360b95a71483d6b9d6d6bd18cc3ac8828c62f2a831e218d1565965505baec9a15ad34ea8a29c96569e580e",
+    "role": "musicoterapeuta",
+    "createdAt": "2026-06-21T23:18:52.799Z"
+  },
+  {
+    "id": "d5bf92698266a213c75f2e11a5abef02",
+    "name": "Mariano Ábalo",
+    "email": "mfabalo@gmail.com",
+    "passwordHash": "scrypt$785be21276615c183c8dfdb2476724fe$139600661fb170bc8e0af95d901f842cea6429161d62a571714a154bc25e8a633f90ae7e8359a800785eb5c09aacc04ca5add44ac02901d3417b52d34a5ef4f5",
+    "role": "musicoterapeuta",
+    "createdAt": "2026-06-21T23:19:28.376Z"
+  },
+  {
+    "id": "bb5d3cdea27ac8d61f6b883b700df80c",
+    "name": "Mirta Haide Bertoni",
+    "email": "mirtahabertoni@gmail.com",
+    "passwordHash": "scrypt$d95e9a31a7b2efa9a72b1368e19bc76b$29c81cd79deb35e0e3e39ce49fa9ceb06eaec6726c6e67d7876fa85fc6bc5f4d6266875231e36dc1751e1597c805c68dd73f6dc09df48b5579e1ed05fb0a92b2",
+    "role": "musicoterapeuta",
+    "createdAt": "2026-06-21T23:20:01.959Z"
+  },
+  {
+    "id": "721de1ae5d2afe10572bbcba34fbc511",
+    "name": "Pilar Guzmán",
+    "email": "mdpilar.guz@gmail.com",
+    "passwordHash": "scrypt$b3de026ff256f9dc7548482d79f443a0$caafb7cd6f300cd56b0694d4f30f3f2508f6e553717b1959a47422fcba61496e8d5bdd4f685198df75304c5804bbf300d271c9e97b15b07c303ce5cc76b01c6d",
+    "role": "musicoterapeuta",
+    "createdAt": "2026-06-21T23:20:36.622Z"
+  },
+  {
+    "id": "917b3b707b13f585810350e52be3bd86",
+    "name": "Cora Levinson",
+    "email": "coraleivinson@gmail.com",
+    "passwordHash": "scrypt$36c3d8bf1d4040e21bf940cadf9e346a$241a7d1c1a5696417941209778efed4773ffe32c8601667d0d47c7ff07fa5ace34e56bfb9126198128760f58df428cf360e65f00e9523cadc5b7466674a3207f",
+    "role": "musicoterapeuta",
+    "createdAt": "2026-06-21T23:21:18.575Z"
+  },
+  {
+    "id": "5f89582b75c0341d6a2d45f487433ece",
+    "name": "Selva Singh",
+    "email": "espacio.algoverde@gmail.com",
+    "passwordHash": "scrypt$e3d23100f51a49b52fa42c612b79e2f8$e4296934207d353f5f696b1c449756dddb271e99e90999d628c80204d1644037ee9de016d5f1d9c0fca7b69ba5cf8cb7878f78ee95dcefe66d57f3a119afc40f",
+    "role": "musicoterapeuta",
+    "createdAt": "2026-06-21T23:21:51.533Z"
+  },
+  {
+    "id": "05c6036ff5eeb6a39fa2c2ce3aab8ad4",
+    "name": "Melina Silvera",
+    "email": "melsilvera@gmail.com",
+    "passwordHash": "scrypt$d18aed2f79eedc79078331d8408274e6$4d8d953aab606c75e4c7c13e2c398d7758479a5798b8b6de5335c6f8ebed8fb8f8fc83690f3c28fb7da530c6fc366dfe73913e081cf3a991c05ad8f0f15efd30",
+    "role": "musicoterapeuta",
+    "createdAt": "2026-06-21T23:22:24.747Z"
+  },
+  {
+    "id": "7739b302dfe618f908fdce745bf9ce12",
+    "name": "Gisele Millenperier",
+    "email": "giselemillenperier@gmail.com",
+    "passwordHash": "scrypt$43584f43d99fb7723be5b12fcb97cf7c$3d5e92a7b1d6cce9b9a21153fe4c3d7c8339b0bd004d388215475e85f63673ed1859ac0e7379ec76b0edb150914b4ad397dd5cd283e15d04c31d080ea36ed2d3",
+    "role": "musicoterapeuta",
+    "createdAt": "2026-06-22T22:37:27.647Z"
+  },
+  {
+    "id": "d7003201297f307821712ba8579ba02b",
+    "name": "Marcos A",
+    "email": "admiraalmarcos@hotmail.com",
+    "passwordHash": "scrypt$2faf21b42457e3d9a0bcaf16fb3484ca$664dbeb5bd4fab89633299483bab702e07eb48b4fae3fcde651bf910130061b3910d9e4801f30b3059abbf6982ace2de25a2546217718b6d6eb285a60bef558b",
+    "role": "musicoterapeuta",
+    "createdAt": "2026-07-20T20:11:12.367Z"
+  }
+]

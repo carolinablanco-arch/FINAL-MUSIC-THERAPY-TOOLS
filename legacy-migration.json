@@ -1,0 +1,10 @@
+{
+  "migratedAt": "2026-06-06T22:29:17.747Z",
+  "migratedToUserId": "1a978cc6d25405c042b537735010ea4a",
+  "source": {
+    "patientsFile": "C:\\Users\\caro1\\OneDrive\\Escritorio\\musicoterapia-app\\tesis 9\\pacientes.json",
+    "videosDir": "C:\\Users\\caro1\\OneDrive\\Escritorio\\musicoterapia-app\\tesis 9\\videos",
+    "consentimientosDir": "C:\\Users\\caro1\\OneDrive\\Escritorio\\musicoterapia-app\\tesis 9\\consentimientos",
+    "analysisOutputsDir": "C:\\Users\\caro1\\OneDrive\\Escritorio\\musicoterapia-app\\tesis 9\\analysis_outputs"
+  }
+}

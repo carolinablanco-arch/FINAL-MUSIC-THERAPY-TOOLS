@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Music Therapy Tools</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@600&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #4a5c92;
+            --action: #3b8d77;
+            --bg: #f6f7fb;
+            --card: rgba(255,255,255,0.86);
+            --text: #1f2937;
+            --muted: #6b7280;
+            --border: #dde3f0;
+            --error-bg: #fef2f2;
+            --error-text: #991b1b;
+            --error-border: #fecaca;
+        }
+        * { box-sizing: border-box; }
+        body {
+            margin: 0;
+            min-height: 100vh;
+            display: grid;
+            place-items: center;
+            padding: 24px;
+            background:
+                radial-gradient(circle at top, rgba(74,92,146,0.14), transparent 34%),
+                radial-gradient(circle at bottom right, rgba(59,141,119,0.10), transparent 28%),
+                var(--bg);
+            color: var(--text);
+            font-family: 'Poppins', sans-serif;
+        }
+        .panel {
+            width: 100%;
+            max-width: 420px;
+            padding: 40px 36px 32px;
+            border-radius: 28px;
+            background: var(--card);
+            border: 1px solid rgba(221,227,240,0.9);
+            box-shadow: 0 24px 60px rgba(74,92,146,0.10);
+            backdrop-filter: blur(10px);
+        }
+        .brand {
+            font-size: .8rem;
+            letter-spacing: .28em;
+            text-transform: uppercase;
+            color: var(--primary);
+            font-weight: 700;
+            margin-bottom: 28px;
+        }
+        h1 {
+            margin: 0 0 24px;
+            font-family: 'Lora', serif;
+            font-size: 2rem;
+            color: var(--primary);
+        }
+        .field {
+            margin-bottom: 18px;
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-size: .92rem;
+            font-weight: 600;
+            color: #334155;
+        }
+        input {
+            width: 100%;
+            border: 1px solid var(--border);
+            border-radius: 18px;
+            padding: 15px 16px;
+            outline: none;
+            background: white;
+            color: var(--text);
+            font: inherit;
+            transition: border-color .2s ease, box-shadow .2s ease;
+        }
+        input:focus {
+            border-color: var(--primary);
+            box-shadow: 0 0 0 4px rgba(74,92,146,.10);
+        }
+        .error-box {
+            display: none;
+            margin-bottom: 18px;
+            padding: 14px 16px;
+            border-radius: 16px;
+            background: var(--error-bg);
+            color: var(--error-text);
+            border: 1px solid var(--error-border);
+            font-size: .92rem;
+        }
+        .error-box.visible {
+            display: block;
+        }
+        .submit {
+            width: 100%;
+            margin-top: 8px;
+            border: 0;
+            border-radius: 18px;
+            padding: 16px 18px;
+            background: var(--action);
+            color: white;
+            font: inherit;
+            font-weight: 700;
+            cursor: pointer;
+            transition: transform .15s ease, opacity .15s ease;
+        }
+        .submit:hover {
+            transform: translateY(-1px);
+        }
+        .submit:disabled {
+            cursor: not-allowed;
+            opacity: .72;
+            transform: none;
+        }
+        .spinner {
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            border: 2px solid rgba(255,255,255,.35);
+            border-top-color: white;
+            display: inline-block;
+            vertical-align: middle;
+            margin-right: 8px;
+            animation: spin .8s linear infinite;
+        }
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+    <section class="panel">
+        <div class="brand">Music Therapy Tools</div>
+        <h1>Iniciar sesión</h1>
+        <div id="login-error" class="error-box" role="alert"></div>
+        <form id="login-form">
+            <div class="field">
+                <label for="login-email">E-mail</label>
+                <input id="login-email" name="email" type="email" autocomplete="username" placeholder="nombre@dominio.com" required>
+            </div>
+            <div class="field">
+                <label for="login-password">Contraseña</label>
+                <input id="login-password" name="password" type="password" autocomplete="current-password" placeholder="Ingresá tu contraseña" required>
+            </div>
+            <button id="login-submit" class="submit" type="submit">Entrar</button>
+        </form>
+    </section>
+
+    <script>
+        const form = document.getElementById('login-form');
+        const errorBox = document.getElementById('login-error');
+        const submitButton = document.getElementById('login-submit');
+
+        function setSubmitting(isSubmitting) {
+            submitButton.disabled = isSubmitting;
+            submitButton.innerHTML = isSubmitting
+                ? '<span class="spinner" aria-hidden="true"></span>Ingresando...'
+                : 'Entrar';
+        }
+
+        function showError(message) {
+            errorBox.textContent = message;
+            errorBox.classList.add('visible');
+        }
+
+        form.addEventListener('submit', async (event) => {
+            event.preventDefault();
+            errorBox.classList.remove('visible');
+            setSubmitting(true);
+
+            const payload = {
+                email: document.getElementById('login-email').value.trim(),
+                password: document.getElementById('login-password').value
+            };
+
+            try {
+                const response = await fetch('/login', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(payload)
+                });
+                const data = await response.json().catch(() => ({}));
+
+                if (!response.ok) {
+                    showError(data.error || 'No se pudo iniciar sesión. Revisá tus datos e intentá nuevamente.');
+                    return;
+                }
+
+                window.location.href = '/';
+            } catch (error) {
+                showError('No se pudo conectar con el servidor. Revisá la conexión e intentá nuevamente.');
+            } finally {
+                setSubmitting(false);
+            }
+        });
+    </script>
+</body>
+</html>
